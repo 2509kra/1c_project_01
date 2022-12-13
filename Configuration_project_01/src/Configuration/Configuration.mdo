@@ -39,4 +39,6 @@
     <languageCode>en</languageCode>
   </languages>
   <commonModules>CommonModule.GeneralServer</commonModules>
+  <dataProcessors>DataProcessor.ВнешняяОбработка1</dataProcessors>
+  <dataProcessors>DataProcessor.ЗагрузкаИСУ_УТ11</dataProcessors>
 </mdclass:Configuration>
