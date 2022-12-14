@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4930842-762a-4def-bf5a-d154ca3435df">
+  <producedTypes>
+    <objectType typeId="51fed8c1-cdd5-4057-810c-f8096941eb80" valueTypeId="742fbce6-f133-49bc-bf7a-2a2b8ac95df8"/>
+    <refType typeId="1ba245b9-a559-4d19-b774-909669532537" valueTypeId="08bacc29-3e7c-4e9d-b272-f0ad89e3da45"/>
+    <selectionType typeId="b287b7fb-d187-4e6c-b0df-48e3b761487b" valueTypeId="dc10e20a-298e-4ed0-91a1-e96f2fe7b2d1"/>
+    <listType typeId="512a6e27-769a-4cf5-97f1-42d8a03b7dfa" valueTypeId="a737a1cb-21c3-4047-9e93-f1eec5970b7c"/>
+    <managerType typeId="455a62ec-75a9-4860-8158-9df4430fc132" valueTypeId="852b0a93-7fe3-4081-99b0-5a7028fa678b"/>
+  </producedTypes>
+  <name>АЭС_МатрицаСкладовПоПриоритетам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Матрица складов по приоритетам (интернет магазин)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.АЭС_МатрицаСкладовПоПриоритетам.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.АЭС_МатрицаСкладовПоПриоритетам.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.АЭС_МатрицаСкладовПоПриоритетам.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.АЭС_МатрицаСкладовПоПриоритетам.Form.ФормаВыбора</defaultChoiceForm>
+  <registerRecords>InformationRegister.АЭС_ПриоритетыСкладов</registerRecords>
+  <registerRecords>InformationRegister.АЭС_АктуальныеПриоритеты</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="7d766486-cbff-4a0d-b39f-3b6c990ac6be">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c6bafa30-1e04-4050-b58b-d4ca5662cdad">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7e67ad96-3050-411e-bb08-7056f52c1d0b">
+    <name>ВидМатрицы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид матрицы</value>
+    </synonym>
+    <type>
+      <types>EnumRef.АЭС_ВидМатрицыРезервирования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b2dc9ff3-4da5-48d3-93cb-61758c9af38c">
+    <name>БизнесРегион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бизнес регион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БизнесРегионы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="653bcb04-e9bd-444a-ac33-5be90235353d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3316ffe2-48f5-4777-ac35-aa16b566930b">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cb6be411-8b67-4824-81cf-b373ad915d0b">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="2301a778-68e7-4c4c-a9b9-2acef5bede39">
+    <producedTypes>
+      <objectType typeId="c7f29d22-130f-4307-b909-c8ab1d14d5d8" valueTypeId="4f1190e8-00aa-4ee5-939e-a608599ecbe3"/>
+      <rowType typeId="4deaf790-bcf6-4692-b847-1a5cb2c54af1" valueTypeId="47073e93-e87e-45e0-b507-38f6522c1323"/>
+    </producedTypes>
+    <name>ТаблицаПриоритетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица приоритетов</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="799fa147-e474-4273-924d-7ed42a9feed6">
+      <name>ПунктКуда</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пункт куда</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.АЭС_ПунктыВыдачи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6937d1aa-21d9-44aa-8729-f0d4bd1e7163">
+      <name>ПунктОткуда</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пункт откуда</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.АЭС_ПунктыВыдачи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5499957e-ef58-489e-89d0-9452fe38acf8">
+      <name>Приоритет</name>
+      <synonym>
+        <key>ru</key>
+        <value>Приоритет</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="5f09a355-0c55-45d6-96d3-6c5982cdc0ee">
+    <producedTypes>
+      <objectType typeId="307181cb-d975-4d97-b507-fc8808a1d7de" valueTypeId="f630c436-2bc6-4dcd-88ea-900640d9bf6d"/>
+      <rowType typeId="596fa89a-d94a-487a-b9d2-970f3d960841" valueTypeId="bc9352f9-9fd8-40cb-adad-2638cd498704"/>
+    </producedTypes>
+    <name>ПунктВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт выдачи</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="2ee4e6ec-2d23-4d62-b2b7-6ed432d80600">
+      <name>ИдентификаторКолонки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор колонки</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ba36c36e-c270-487a-90f5-71dad1e5bcf5">
+      <name>ПунктВыдачи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пункт выдачи</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.АЭС_ПунктыВыдачи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="41c82d43-0547-4605-ae9d-95e87a2e1209">
+      <name>СкладРезерва</name>
+      <synonym>
+        <key>ru</key>
+        <value>Склад резерва</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Склады</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="91ab22bd-25cd-4087-b40e-86194ffc5067">
+    <producedTypes>
+      <objectType typeId="d3505cbb-546d-4ba2-a80e-b372de98c5d7" valueTypeId="7a08d11a-5f48-4960-bb0c-a2dd1b9675cf"/>
+      <rowType typeId="67e113eb-fe09-40f3-957e-3304801d64ef" valueTypeId="39785407-a131-46ce-a160-64e5f5e29c45"/>
+    </producedTypes>
+    <name>ПриоритетыПоСкладам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритеты по складам</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="ba10a00b-3ab5-4648-ad08-c2999c820c57">
+      <name>ПунктКуда</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пункт куда</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.АЭС_ПунктыВыдачи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="eb83d7a9-59e1-4125-a03c-8c7aba58837a">
+      <name>ПунктОткуда</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пункт откуда</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Склады</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="032d50b7-e8a2-4bf0-93c8-da179b47c72e">
+      <name>Приоритет</name>
+      <synonym>
+        <key>ru</key>
+        <value>Приоритет</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

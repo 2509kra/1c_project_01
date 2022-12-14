@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0fe545df-7397-4b94-ae06-4fc7f4846630">
+  <producedTypes>
+    <selectionType typeId="36cf7db4-f260-416c-8f86-a5bc067cbd28" valueTypeId="7fc4d056-3b88-45c9-8421-60aa96131264"/>
+    <listType typeId="c0064d50-537e-46e3-b4fc-fa43e4d7ea56" valueTypeId="0cb61f65-ba4d-468b-a55a-8cf24970bc4e"/>
+    <managerType typeId="5f3d81c1-12a7-4716-82df-7e00079f782f" valueTypeId="2e919eea-7876-41e0-a4ad-c1ae48758ce7"/>
+    <recordSetType typeId="7b505d2d-ad0e-48c6-97b3-26c4c89cd085" valueTypeId="0560f250-2b57-40a7-9a70-cd04a7f8d9ec"/>
+    <recordKeyType typeId="dae542ea-cca4-437a-ac62-fdd04331cac3" valueTypeId="db44012b-3f03-4697-922f-8e39c27f86d8"/>
+    <recordType typeId="619551c4-9d7c-4874-8671-9e587462c359" valueTypeId="b041ede3-949d-4e93-a993-cd37f3c4a2f3"/>
+    <recordManagerType typeId="ab27e1c0-4b50-4390-9608-758dc7edef49" valueTypeId="4b27fee5-a27a-4172-87d6-a76ccd38346d"/>
+  </producedTypes>
+  <name>АЭС_ПриоритетыСкладов</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС приоритеты складов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9702cb43-4a9f-46c1-9102-d9c02c65e9d0">
+    <name>Приоритет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e093d0b1-f229-44ed-9827-568a08c9c879">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="94711c7d-1233-4174-8e8f-c49ddc58fe5a">
+    <name>ПунктВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт выдачи</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.АЭС_ПунктыВыдачи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

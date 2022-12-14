@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16aeef10-2b2a-4c51-b9cd-232849e547be">
+  <producedTypes>
+    <objectType typeId="e12d20a0-12a0-4931-8de5-65189ee0bd48" valueTypeId="e1d07203-49cc-4bfa-b317-170246de09ad"/>
+    <managerType typeId="d6ee8756-e8ad-4e40-bc2d-efbf5f18f71c" valueTypeId="25d3d6cf-56ae-40e0-99e2-9be6760db943"/>
+  </producedTypes>
+  <name>АЭС_АналогZОтчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аналог Z отчета</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.АЭС_АналогZОтчета.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="b7aee6c5-83aa-42f3-b9a4-a168b8b0e20b">
+    <name>ПериодНачало</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период начало</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="81f5e978-c071-4fca-9f52-0e6d07490ac3">
+    <name>ПериодКонец</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период конец</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="8c1f167b-54df-4f06-bcc6-d00048b95726">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6d3bb944-74ce-4d8f-9ec5-e2a5968dda0a">
+    <name>МакетZa</name>
+  </templates>
+</mdclass:Report>

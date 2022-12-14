@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc490685-4d87-4b2a-8b61-274bfd8fa2aa">
+  <name>АЭС_ПередЗаписьюЭлементаСправочника</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС перед записью элемента справочника</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Контрагенты</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.АЭС_КлиентСервер.АЭС_ПередЗаписьюЭлементаСправочникаПередЗаписью</handler>
+</mdclass:EventSubscription>

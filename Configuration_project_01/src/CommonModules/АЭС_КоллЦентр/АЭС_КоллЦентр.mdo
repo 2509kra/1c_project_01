@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce44a49b-f12e-496f-a3d1-e3249f6c4a7f">
+  <name>АЭС_КоллЦентр</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС колл центр</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

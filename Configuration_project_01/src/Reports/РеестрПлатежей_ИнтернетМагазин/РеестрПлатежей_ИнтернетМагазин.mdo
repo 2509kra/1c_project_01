@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e9210c9-3872-4856-a449-39411eebff21">
+  <producedTypes>
+    <objectType typeId="b7ac7fe8-dc99-43fe-9abb-bcf23d064f41" valueTypeId="faaea2f7-e25f-4a8d-871b-ddedb3b65955"/>
+    <managerType typeId="d1d5af71-6c6d-45f4-af67-0c555745b57b" valueTypeId="0102a618-7f39-4651-8594-ac08387f99d9"/>
+  </producedTypes>
+  <name>РеестрПлатежей_ИнтернетМагазин</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реестр платежей интернет магазин</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РеестрПлатежей_ИнтернетМагазин.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="ac309e8c-dc68-4e4a-a916-c7410105de85">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

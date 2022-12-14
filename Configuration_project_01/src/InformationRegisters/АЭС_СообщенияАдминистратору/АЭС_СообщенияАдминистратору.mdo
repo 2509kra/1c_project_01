@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6187ee09-0bc1-4510-b3ed-61b795872e4c">
+  <producedTypes>
+    <selectionType typeId="52df0ccf-b2ac-4d2d-ba6f-75c57aaa2ec5" valueTypeId="0dcdaafe-2d20-4205-8196-8a69d54d716e"/>
+    <listType typeId="6f26e725-3ed5-418f-975c-45fd42b8ac2c" valueTypeId="a8105be7-1214-4dd3-83da-b61b0f3e13a9"/>
+    <managerType typeId="aca5ebad-f996-42ed-94c0-96bf61e280f4" valueTypeId="f00121ac-4d5b-40e5-9a6f-40def8599f53"/>
+    <recordSetType typeId="b2891cdb-0ffb-4949-98a6-5b0b8dc2fb5b" valueTypeId="6d04af16-282a-4533-a9f4-1efe0feae21c"/>
+    <recordKeyType typeId="65b21520-63a8-4a9c-8ed6-15ee4e3595dc" valueTypeId="59a6e384-23fa-4af4-b6bc-160dec15accd"/>
+    <recordType typeId="91a72f22-21d8-45dd-90cf-a7d84af07b9e" valueTypeId="46f9c145-92fd-4d43-ab39-df6c0f499098"/>
+    <recordManagerType typeId="e72c4272-e4ff-4022-8fd1-41780d3d0e5f" valueTypeId="127b9699-98bd-4b25-b89f-edb746150c3c"/>
+  </producedTypes>
+  <name>АЭС_СообщенияАдминистратору</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС сообщения администратору</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="96b352ab-60ab-4bbf-8d4b-c4b79be5c193">
+    <name>Сообщение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="e207add9-6da5-4574-9700-bbf7807f1ac8">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="599a49ef-f192-4a1d-88c5-4ba213bcade5">
+    <name>ГУИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>ГУИД</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

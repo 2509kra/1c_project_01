@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dbfbada5-ad30-456c-98ed-8dc567412886">
+  <producedTypes>
+    <objectType typeId="163ec8b3-747d-41e0-bfdd-2056a54cc065" valueTypeId="2cd4f3d9-13de-44bc-b383-b46ca5bc36dd"/>
+    <managerType typeId="fd2e89a6-693e-48cd-a58b-d22313f9d4bb" valueTypeId="7d2690db-525e-405d-968b-6dc6b3fbbc95"/>
+  </producedTypes>
+  <name>АЭС_ОбработкаОчередиЧековККМвСТЭК</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС обработка очереди чеков ККМ в СТЭК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.АЭС_ОбработкаОчередиЧековККМвСТЭК.Form.Форма</defaultForm>
+  <attributes uuid="bff33e4e-ba29-4510-acad-7dbae80cf271">
+    <name>Отладка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отладка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="5c7b76ea-8658-4fb4-8acf-b1dfed8290a5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

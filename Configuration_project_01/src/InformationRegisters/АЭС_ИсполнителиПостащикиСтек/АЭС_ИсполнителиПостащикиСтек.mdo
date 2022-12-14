@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1a3732a-4fe4-4476-823a-b4757d43bc38">
+  <producedTypes>
+    <selectionType typeId="b86eceb7-6512-4171-8c0c-d018a89baa81" valueTypeId="db716e44-8cc2-47b7-8358-5c13f7fcef22"/>
+    <listType typeId="8f346e8f-a2db-45fa-81b8-0a5764592c81" valueTypeId="4ad1c72f-4372-4b24-beea-a5c3b2a85112"/>
+    <managerType typeId="cc2dac9e-7f3a-401c-9607-ed890c7a4b95" valueTypeId="eccb473c-458f-4db8-a110-0afe24e67e6f"/>
+    <recordSetType typeId="57d0c421-42eb-481f-be56-0d8dcbb69944" valueTypeId="c8d3ed76-607b-4d5f-97cc-a8d2808582ac"/>
+    <recordKeyType typeId="962be62f-5fb1-4739-ae42-a593cfc72f80" valueTypeId="91a0d15f-fa14-4294-aced-aa10d1dcf7d8"/>
+    <recordType typeId="f570746e-e3c7-4752-beb0-e28c96b41f28" valueTypeId="5292d0b6-ea79-42ab-8e3e-5f1b7783269c"/>
+    <recordManagerType typeId="526038dc-ebdf-4be0-828e-57f2fdd42273" valueTypeId="310e8ed0-c4df-4be9-b941-cad434d3f7ec"/>
+  </producedTypes>
+  <name>АЭС_ИсполнителиПостащикиСтек</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исполнители постащики (Стек)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="23c69100-c2bb-4916-926e-d2fbf0448ba0">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6bb8a8d5-63b8-4323-8b04-d7c28cb726c9">
+    <name>Партнер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партнер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Партнеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="780c58dd-49d9-4844-a57d-35bb9ede1ccd">
+    <name>IDПартнера</name>
+    <synonym>
+      <key>ru</key>
+      <value>IDПартнера</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>11</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

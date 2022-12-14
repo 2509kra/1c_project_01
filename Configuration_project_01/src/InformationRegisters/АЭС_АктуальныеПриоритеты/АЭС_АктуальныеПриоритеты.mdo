@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f785130-d856-4d6e-95a9-e36f258b755a">
+  <producedTypes>
+    <selectionType typeId="14d4ac15-52a0-4340-9e44-b14b80f8e81a" valueTypeId="122519be-b078-40b1-994e-321cc00c6290"/>
+    <listType typeId="5249bdc9-3efe-45e7-9a36-48ec15e27fc5" valueTypeId="644a2d87-b3b5-48bb-b00b-74082923f90d"/>
+    <managerType typeId="d41919f0-8e8d-49da-b747-a28a1b0a81c5" valueTypeId="11983cb8-9341-42b1-a12a-636dea81bbc2"/>
+    <recordSetType typeId="73119c78-69ba-46bb-88ae-7f08f14dc561" valueTypeId="cd04cd1c-531d-408d-9967-452a95d7171b"/>
+    <recordKeyType typeId="1684eed4-0305-4f3a-902a-b8804baa0c49" valueTypeId="daf4d28f-0d15-4953-8534-bce818cbb80e"/>
+    <recordType typeId="3b01ce47-ab4d-40cc-a4ea-30a536d67426" valueTypeId="f4fa2e92-4881-467b-a7d3-d91271db9503"/>
+    <recordManagerType typeId="0b41b835-09d8-4594-ae3d-c80cb925f64b" valueTypeId="2c1f6dc5-ab72-4a55-9dbd-fe6295c362ee"/>
+  </producedTypes>
+  <name>АЭС_АктуальныеПриоритеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС актуальные приоритеты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="86aea0cf-2166-4a5c-832d-d7adbbed4f75">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

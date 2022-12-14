@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="450cd6ce-7de5-48d5-8758-c7996adb8a99">
+  <name>АЭС_ЗагрузкаКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка контрагентов</value>
+  </synonym>
+  <methodName>CommonModule.АЭС_Сервер.АЭС_ЗагрузкаКонтрагентов</methodName>
+  <description>Загрузка контрагентов</description>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

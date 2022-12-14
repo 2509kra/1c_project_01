@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e0d3dd07-0b42-43ac-928c-d927ad1daa4e">
+  <producedTypes>
+    <objectType typeId="7981dcf7-f01f-459c-a32e-19eab463ea1d" valueTypeId="3ac4311d-3107-48a7-bc8d-13036e58ee94"/>
+    <managerType typeId="578f9232-052f-4809-b08a-bbfac7b459b2" valueTypeId="d0093772-00aa-425d-821c-c80394a097e6"/>
+  </producedTypes>
+  <name>АЭС_РабочееМестоКассира</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочее место кассира NEW</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.АЭС_РабочееМестоКассира.Form.Форма</defaultForm>
+  <attributes uuid="fd3c3fbb-768e-424d-a370-a78ee826b353">
+    <name>ВидОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оплаты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.АЭС_ВидОплаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>Folders</choiceFoldersAndItems>
+  </attributes>
+  <attributes uuid="47d61d2f-ae74-4930-989f-ac90faf68c7c">
+    <name>ЛицевойСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лицевой счет</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b428e19d-414e-4c79-b3b7-d82f144adcc5">
+    <name>ЮрФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Юр физ лицо</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЮрФизЛицо</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0d3fd59e-32b6-4f6f-ac3a-bb83acdfc5b3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0944ff2d-fefa-4c07-8b5a-6b01fe17ec61">
+    <name>КассаККМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса ККМ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КассыККМ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <quickChoice>DontUse</quickChoice>
+    <createOnInput>DontUse</createOnInput>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  </attributes>
+  <attributes uuid="6e663a06-587c-4bc6-8f33-83431afab6bb">
+    <name>НомерСекции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер секции</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1f1bf534-2833-4566-b83f-6ff58da04819">
+    <name>КассоваяСмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кассовая смена</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.КассоваяСмена</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Кассовая смена, в течении которой оформляется документ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.КассаККМ</name>
+      <field>DataProcessor.АЭС_РабочееМестоКассира.Attribute.КассаККМ</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="21955b24-9559-405d-a5fc-501421e18813">
+    <name>КонтактныеДанныеЭлектронногоЧека</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контактные данные электронного чека</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="38cb897e-b47f-46a9-9352-c205d75e884f">
+    <name>ВариантОтправкиЭлектронногоЧека</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант отправки электронного чека</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВариантыОтправкиЭлектронногоЧекаПокупателю</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c1d1cb7a-06d4-4252-bb2c-1f909385a9ed">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2c7cd005-1597-4f23-83bc-9ad8e78d47cd">
+    <name>ИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c25aa4bf-384b-43ba-a6b7-4fc4eaf5ea0e">
+    <name>АдресЛС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес ЛС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b4371dbe-8d07-4b3b-aac9-a736e5707cf3">
+    <name>Касса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Кассы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="68ae462b-5539-4d64-825a-d6712f1145c3">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ac0fa7bd-409e-42c6-a7ba-ea78759b0e8b">
+    <name>Партнер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партнер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Партнеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="607e242f-282c-4e06-92b3-c030be5cdf73">
+    <name>НаименованиеФИО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование/ФИО</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6f626272-6d44-4274-a694-b57bd00a2924">
+    <name>Кассир</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кассир</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="9691ac94-c29f-4639-8ce9-07fe018c24be">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

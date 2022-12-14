@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8123cce4-560f-4868-befe-8646869ff312">
+  <producedTypes>
+    <objectType typeId="1b7ac2a4-0b68-44fe-8fb1-561cc751768a" valueTypeId="4fccbfc4-1471-4dce-9e58-17f7a3f938c9"/>
+    <managerType typeId="842a09fb-c87f-4f69-ad0f-e29554fd1480" valueTypeId="c6f21a39-9ec8-4342-8a12-8b04826f87a6"/>
+  </producedTypes>
+  <name>АЭС_ЗагрузкаКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка контрагентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.АЭС_ЗагрузкаКонтрагентов.Form.Форма</defaultForm>
+  <attributes uuid="dc3841a1-698b-4800-a1bb-3cdf6dfffeac">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c5146608-eadb-475b-9a5d-b03fa1772963">
+    <name>Патрнер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Патрнер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Партнеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="13d3c832-8aef-4fd0-9556-588916894d82">
+    <name>ПутьКФайлу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к файлу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="3fceef0c-76f8-43c9-a6bf-502e3be9a68f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

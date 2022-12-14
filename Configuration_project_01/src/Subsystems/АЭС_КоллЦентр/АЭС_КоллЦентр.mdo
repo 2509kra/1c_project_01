@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30bf633d-f3ab-4eb4-b009-fae6e591f4a4">
+  <name>АЭС_КоллЦентр</name>
+  <synonym>
+    <key>ru</key>
+    <value>Колл-центр (АЭС)</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.АЭС_ОбработкаОбращенийКоллЦентра</content>
+  <content>Task.ЗадачаИсполнителя</content>
+  <content>BusinessProcess.Задание</content>
+  <content>Catalog.СтруктураПредприятия</content>
+</mdclass:Subsystem>

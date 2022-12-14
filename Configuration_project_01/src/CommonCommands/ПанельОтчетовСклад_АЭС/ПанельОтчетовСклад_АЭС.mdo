@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a54c717a-ae11-4616-bcc9-b7d720bab6e2">
+  <name>ПанельОтчетовСклад_АЭС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты по складу (АЭС)</value>
+  </synonym>
+  <group>CommandGroup.РазделГлавное14_Отчеты</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

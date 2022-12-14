@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="558caa0e-abb9-4879-8713-c4c930c10d3f">
+  <producedTypes>
+    <selectionType typeId="d2ef43d5-cbf6-48b3-8ea2-39f2085121ea" valueTypeId="56b8e76e-4f16-49ce-844c-39ac7602dd06"/>
+    <listType typeId="e87657ec-da5a-441e-9a67-543edec2589d" valueTypeId="6d95713d-d804-468b-b2ce-ff705274190f"/>
+    <managerType typeId="e17cf7ca-3ba2-4937-a16f-96fbb813d6dc" valueTypeId="f9c4e3e4-6687-4d4b-b418-a6fa2f83fe67"/>
+    <recordSetType typeId="67c889e4-95d0-4666-985a-8cc5c22a2ade" valueTypeId="52b96e45-b8b7-40ae-aa1f-21a8e5264160"/>
+    <recordKeyType typeId="386a8db2-d751-4794-a0a9-b9201bf503a2" valueTypeId="ab4ae939-bca8-483f-83e0-a4ee1f2c095b"/>
+    <recordType typeId="44978fad-cd56-459c-953d-ee5d9a93fb2f" valueTypeId="4b9ed97f-f91e-46ab-9ba6-7d5daf476ebb"/>
+    <recordManagerType typeId="b1a783a0-b91c-4a48-8538-3fcb05ac683e" valueTypeId="d0dc47f5-3b02-443d-adbd-0c5e2e46ee54"/>
+  </producedTypes>
+  <name>АЭС_СоответствиеГруппНоменклатурыПоставщиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие групп номенклатуры поставщиков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.АЭС_СоответствиеГруппНоменклатурыПоставщиков.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.АЭС_СоответствиеГруппНоменклатурыПоставщиков.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="a57c5bce-1c03-459c-a783-822d7c6e9364">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Партнеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b113cd14-6984-40ce-9589-7b8becc6381e">
+    <name>ГруппаПоставщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа поставщика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>Folders</choiceFoldersAndItems>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="037def9c-ecd7-4c99-aee7-e839dcbc965e">
+    <name>ГруппаАтом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа атом</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>Folders</choiceFoldersAndItems>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="eda22cf5-0841-4d6e-b4ab-e3b6217d3807">
+    <name>ВидНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="63702626-8196-40bd-9661-001a829af587">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7279d220-881b-427c-9dfb-ed30ddc8652e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

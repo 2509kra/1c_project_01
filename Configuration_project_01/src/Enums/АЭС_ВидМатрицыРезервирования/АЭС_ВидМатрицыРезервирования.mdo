@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34dd139a-0f62-4f60-94b6-cd63a6b25575">
+  <producedTypes>
+    <refType typeId="67ab2a4c-ffed-4e5e-9437-3df53e0c426c" valueTypeId="986d5f97-afdd-4c0f-93c8-a24003a14e1c"/>
+    <listType typeId="3cf37099-2561-40de-a975-6e912aa18348" valueTypeId="a24a89a8-36ce-4370-ba76-8cb58e224a84"/>
+    <managerType typeId="b27b3196-a89a-449d-81ac-75a9f366fbfe" valueTypeId="897cb999-2691-4e49-80b5-c21bfd99db2a"/>
+  </producedTypes>
+  <name>АЭС_ВидМатрицыРезервирования</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС вид матрицы резервирования</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="15931d0e-1cd0-4f17-b9b0-e5c12b1ee55e">
+    <name>ПоСкладам</name>
+    <synonym>
+      <key>ru</key>
+      <value>По складам</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="89107c15-0391-4023-ba2b-bbfdf1e44e3e">
+    <name>ПоПунктамВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>По пунктам выдачи</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
