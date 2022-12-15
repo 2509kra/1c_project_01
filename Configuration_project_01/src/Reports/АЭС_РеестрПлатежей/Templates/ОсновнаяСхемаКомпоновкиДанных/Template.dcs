@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>РеестрПлатежей</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЛС</dataPath>
+			<field>НомерЛС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер ЛС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Секция</dataPath>
+			<field>Секция</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПолученоБезналичными</dataPath>
+			<field>ПолученоБезналичными</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получено безналичными</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПолученоНаличными</dataPath>
+			<field>ПолученоНаличными</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получено наличными</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидОплаты</dataPath>
+			<field>ВидОплаты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФормаОплаты</dataPath>
+			<field>ФормаОплаты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Кассир</dataPath>
+			<field>Кассир</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Касса (участок)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КассаККМ</dataPath>
+			<field>КассаККМ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументПродажи</dataPath>
+			<field>ДокументПродажи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Примечание</dataPath>
+			<field>Примечание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерПлатежнойКарты</dataPath>
+			<field>НомерПлатежнойКарты</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>MinimumWidth</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комиссия</dataPath>
+			<field>Комиссия</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комиссия</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодПлатежа</dataPath>
+			<field>ПериодПлатежа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураНаименование</dataPath>
+			<field>НоменклатураНаименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Format</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сумма</dataPath>
+			<field>Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возврат</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧекККМ</dataPath>
+			<field>ЧекККМ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Чек ККМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПризнакСпособаРасчета</dataPath>
+			<field>ПризнакСпособаРасчета</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоставщикУслуг</dataPath>
+			<field>ПоставщикУслуг</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсполнительУслуг</dataPath>
+			<field>ИсполнительУслуг</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВложенныйЗапрос.Ссылка КАК Ссылка,
+	ЕСТЬNULL(АЭС_ПроцентКомиссиБанка.Процент, 0) КАК Процент
+ПОМЕСТИТЬ ВТ_Процент
+ИЗ
+	(ВЫБРАТЬ
+		АЭС_Платежи.Ссылка КАК Ссылка,
+		МАКСИМУМ(АЭС_ПроцентКомиссиБанка.Период) КАК Период,
+		АЭС_Платежи.Организация КАК Организация
+	ИЗ
+		Документ.АЭС_Платежи КАК АЭС_Платежи
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.АЭС_ПроцентКомиссиБанка КАК АЭС_ПроцентКомиссиБанка
+			ПО АЭС_Платежи.Организация = АЭС_ПроцентКомиссиБанка.Организация
+				И АЭС_Платежи.Дата &gt;= АЭС_ПроцентКомиссиБанка.Период
+	ГДЕ
+		АЭС_Платежи.Дата МЕЖДУ &amp;НачалоПериода И &amp;ОкончаниеПериода
+		И АЭС_Платежи.Статус = ЗНАЧЕНИЕ(перечисление.СтатусыЧековККМ.Пробит)
+		И АЭС_Платежи.Возврат = ЛОЖЬ
+	
+	СГРУППИРОВАТЬ ПО
+		АЭС_Платежи.Ссылка,
+		АЭС_Платежи.Организация) КАК ВложенныйЗапрос
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.АЭС_ПроцентКомиссиБанка КАК АЭС_ПроцентКомиссиБанка
+		ПО ВложенныйЗапрос.Период = АЭС_ПроцентКомиссиБанка.Период
+			И ВложенныйЗапрос.Организация = АЭС_ПроцентКомиссиБанка.Организация
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВложенныйЗапрос.Кассир КАК Кассир,
+	ВложенныйЗапрос.Секция КАК Секция,
+	ВложенныйЗапрос.ВидОплаты КАК ВидОплаты,
+	ВложенныйЗапрос.ФормаОплаты КАК ФормаОплаты,
+	ВложенныйЗапрос.Контрагент КАК Контрагент,
+	СУММА(ВложенныйЗапрос.ПолученоНаличными) КАК ПолученоНаличными,
+	СУММА(ЕСТЬNULL(ВложенныйЗапрос.ПолученоБезналичными, 0)) КАК ПолученоБезналичными,
+	ВложенныйЗапрос.НомерЛС КАК НомерЛС,
+	ВложенныйЗапрос.Подразделение КАК Подразделение,
+	ВложенныйЗапрос.КассаККМ КАК КассаККМ,
+	ВложенныйЗапрос.Организация КАК Организация,
+	ВЫБОР
+		КОГДА ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.Электроэнергия)
+				ИЛИ ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.Электроэнергия_Аванс)
+				ИЛИ ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.ПлатаЗаЭЭНаСодержаниеОИ)
+				ИЛИ ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.Отключение)
+				ИЛИ ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.Подключение)
+			ТОГДА ВложенныйЗапрос.ПериодПлатежа
+		ИНАЧЕ ВЫБОР
+				КОГДА ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.ЭлектротехническиеТоварыСобственные)
+						ИЛИ ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.ПродажаТовараПоДоговоруКомиссии)
+						ИЛИ ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.ПродажаТовараПоДоговоруКонсигнации)
+					ТОГДА ПОДСТРОКА(ВложенныйЗапрос.НоменклатураНаименование, 0, 150) + ВЫБОР
+							КОГДА ВложенныйЗапрос.Примечание ЕСТЬ NULL
+								ТОГДА ""
+							ИНАЧЕ ПОДСТРОКА(ВложенныйЗапрос.Примечание, 0, 150)
+						КОНЕЦ
+				ИНАЧЕ ВЫБОР
+						КОГДА ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.УстановкаСнятиеПУ)
+							ТОГДА ВложенныйЗапрос.Контрагент
+						ИНАЧЕ ВложенныйЗапрос.Примечание
+					КОНЕЦ
+			КОНЕЦ
+	КОНЕЦ КАК Примечание,
+	ЧекККМОплатаПлатежнымиКартами.НомерПлатежнойКарты КАК НомерПлатежнойКарты,
+	ВложенныйЗапрос.ДокументПродажи КАК ДокументПродажи,
+	СУММА(ВЫРАЗИТЬ(ЕСТЬNULL(ВложенныйЗапрос.ПолученоБезналичными, 0) / 100 * ВТ_Процент.Процент КАК ЧИСЛО(15, 2))) КАК Комиссия,
+	СУММА(ЕСТЬNULL(ВложенныйЗапрос.Количество, 0)) КАК Количество,
+	СУММА(ВложенныйЗапросВозврат.Сумма) КАК Сумма,
+	ВложенныйЗапрос.Дата КАК Дата,
+	ВложенныйЗапрос.ПризнакСпособаРасчета КАК ПризнакСпособаРасчета,
+	ВЫБОР
+		КОГДА ВложенныйЗапрос.ПоставщикУслуг = ЗНАЧЕНИЕ(Справочник.Партнеры.ПустаяСсылка)
+			ТОГДА ВложенныйЗапрос.ИсполнительУслуг
+		ИНАЧЕ ВложенныйЗапрос.ПоставщикУслуг
+	КОНЕЦ КАК ПоставщикУслуг,
+	ВложенныйЗапрос.Номенклатура КАК Номенклатура
+ИЗ
+	(ВЫБРАТЬ
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Кассир КАК Кассир,
+		АЭС_ПлатежиОсновнаяДеятельность.Секция КАК Секция,
+		АЭС_ПлатежиОсновнаяДеятельность.ВидОплаты КАК ВидОплаты,
+		АЭС_ПлатежиОсновнаяДеятельность.ФормаОплаты КАК ФормаОплаты,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Контрагент КАК Контрагент,
+		СУММА(ВЫБОР
+				КОГДА АЭС_ПлатежиОсновнаяДеятельность.Секция = 7
+					ТОГДА 0
+				ИНАЧЕ АЭС_ПлатежиОсновнаяДеятельность.Сумма
+			КОНЕЦ) КАК ПолученоНаличными,
+		СУММА(ВЫБОР
+				КОГДА АЭС_ПлатежиОсновнаяДеятельность.Секция = 7
+					ТОГДА АЭС_ПлатежиОсновнаяДеятельность.Сумма
+				ИНАЧЕ 0
+			КОНЕЦ) КАК ПолученоБезналичными,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Контрагент.НомерЛС КАК НомерЛС,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.КассаККМ.Подразделение КАК Подразделение,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.КассаККМ КАК КассаККМ,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Организация КАК Организация,
+		АЭС_ПлатежиОсновнаяДеятельность.НомерУслуги.Номенклатура КАК Номенклатура,
+		АЭС_ПлатежиОсновнаяДеятельность.ДокументПродажи КАК ДокументПродажи,
+		АЭС_ПлатежиОсновнаяДеятельность.Примечание КАК Примечание,
+		АЭС_ПлатежиОсновнаяДеятельность.ПериодПлатежа КАК ПериодПлатежа,
+		АЭС_ПлатежиОсновнаяДеятельность.НомерУслуги.Номенклатура.Наименование КАК НоменклатураНаименование,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Дата КАК Дата,
+		NULL КАК Количество,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Ссылка КАК Ссылка,
+		АЭС_ПлатежиОсновнаяДеятельность.ПризнакСпособаРасчета КАК ПризнакСпособаРасчета,
+		АЭС_ПлатежиОсновнаяДеятельность.ПоставщикУслуг КАК ПоставщикУслуг,
+		АЭС_ПлатежиОсновнаяДеятельность.ИсполнительУслуг КАК ИсполнительУслуг
+	ИЗ
+		Документ.АЭС_Платежи.ОсновнаяДеятельность КАК АЭС_ПлатежиОсновнаяДеятельность
+	ГДЕ
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;ОкончаниеПериода
+		И АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Статус = ЗНАЧЕНИЕ(перечисление.СтатусыЧековККМ.Пробит)
+		И АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Возврат = ЛОЖЬ
+	
+	СГРУППИРОВАТЬ ПО
+		АЭС_ПлатежиОсновнаяДеятельность.ФормаОплаты,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Контрагент,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.КассаККМ,
+		АЭС_ПлатежиОсновнаяДеятельность.ВидОплаты,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Кассир,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Организация,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Контрагент.НомерЛС,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.КассаККМ.Подразделение,
+		АЭС_ПлатежиОсновнаяДеятельность.Секция,
+		АЭС_ПлатежиОсновнаяДеятельность.НомерУслуги.Номенклатура,
+		АЭС_ПлатежиОсновнаяДеятельность.ДокументПродажи,
+		АЭС_ПлатежиОсновнаяДеятельность.Примечание,
+		АЭС_ПлатежиОсновнаяДеятельность.ПериодПлатежа,
+		АЭС_ПлатежиОсновнаяДеятельность.НомерУслуги.Номенклатура.Наименование,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Дата,
+		АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Ссылка,
+		АЭС_ПлатежиОсновнаяДеятельность.ПризнакСпособаРасчета,
+		АЭС_ПлатежиОсновнаяДеятельность.ПоставщикУслуг,
+		АЭС_ПлатежиОсновнаяДеятельность.ИсполнительУслуг
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		АЭС_ПлатежиТовары.Ссылка.Кассир,
+		АЭС_ПлатежиТовары.Секция,
+		АЭС_ПлатежиТовары.ВидОплаты,
+		АЭС_ПлатежиТовары.ФормаОплаты,
+		АЭС_ПлатежиТовары.Ссылка.Контрагент,
+		СУММА(ВЫБОР
+				КОГДА АЭС_ПлатежиТовары.Секция = 7
+					ТОГДА 0
+				ИНАЧЕ АЭС_ПлатежиТовары.Сумма
+			КОНЕЦ),
+		СУММА(ВЫБОР
+				КОГДА АЭС_ПлатежиТовары.Секция = 7
+					ТОГДА АЭС_ПлатежиТовары.Сумма
+				ИНАЧЕ 0
+			КОНЕЦ),
+		АЭС_ПлатежиТовары.Ссылка.Контрагент.НомерЛС,
+		АЭС_ПлатежиТовары.Ссылка.КассаККМ.Подразделение,
+		АЭС_ПлатежиТовары.Ссылка.КассаККМ,
+		АЭС_ПлатежиТовары.Ссылка.Организация,
+		АЭС_ПлатежиТовары.Номенклатура,
+		АЭС_ПлатежиТовары.ДокументПродажи,
+		АЭС_ПлатежиТовары.Номенклатура.Производитель.Наименование,
+		АЭС_ПлатежиТовары.Ссылка.ПериодПлатежа,
+		АЭС_ПлатежиТовары.Номенклатура.Наименование,
+		АЭС_ПлатежиТовары.Ссылка.Дата,
+		СУММА(АЭС_ПлатежиТовары.Количество),
+		АЭС_ПлатежиТовары.Ссылка.Ссылка,
+		АЭС_ПлатежиТовары.ПризнакСпособаРасчета,
+		NULL,
+		NULL
+	ИЗ
+		Документ.АЭС_Платежи.Товары КАК АЭС_ПлатежиТовары
+	ГДЕ
+		АЭС_ПлатежиТовары.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;ОкончаниеПериода
+		И АЭС_ПлатежиТовары.Ссылка.Статус = ЗНАЧЕНИЕ(перечисление.СтатусыЧековККМ.Пробит)
+		И АЭС_ПлатежиТовары.Ссылка.Возврат = ЛОЖЬ
+	
+	СГРУППИРОВАТЬ ПО
+		АЭС_ПлатежиТовары.ВидОплаты,
+		АЭС_ПлатежиТовары.ФормаОплаты,
+		АЭС_ПлатежиТовары.Ссылка.Организация,
+		АЭС_ПлатежиТовары.Ссылка.Контрагент,
+		АЭС_ПлатежиТовары.Ссылка.Кассир,
+		АЭС_ПлатежиТовары.Ссылка.КассаККМ,
+		АЭС_ПлатежиТовары.Ссылка.Контрагент.НомерЛС,
+		АЭС_ПлатежиТовары.Ссылка.КассаККМ.Подразделение,
+		АЭС_ПлатежиТовары.Секция,
+		АЭС_ПлатежиТовары.Номенклатура,
+		АЭС_ПлатежиТовары.ДокументПродажи,
+		АЭС_ПлатежиТовары.Номенклатура.Производитель.Наименование,
+		АЭС_ПлатежиТовары.Номенклатура.Наименование,
+		АЭС_ПлатежиТовары.Ссылка.Дата,
+		АЭС_ПлатежиТовары.Ссылка.Ссылка,
+		АЭС_ПлатежиТовары.Ссылка.ПериодПлатежа,
+		АЭС_ПлатежиТовары.ПризнакСпособаРасчета
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.Кассир,
+		АЭС_ПлатежиСторонниеУслуги.Секция,
+		АЭС_ПлатежиСторонниеУслуги.ВидОплаты,
+		АЭС_ПлатежиСторонниеУслуги.ФормаОплаты,
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.Контрагент,
+		СУММА(ВЫБОР
+				КОГДА АЭС_ПлатежиСторонниеУслуги.Секция = 7
+					ТОГДА 0
+				ИНАЧЕ АЭС_ПлатежиСторонниеУслуги.Сумма
+			КОНЕЦ),
+		СУММА(ВЫБОР
+				КОГДА АЭС_ПлатежиСторонниеУслуги.Секция = 7
+					ТОГДА АЭС_ПлатежиСторонниеУслуги.Сумма
+				ИНАЧЕ 0
+			КОНЕЦ),
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.Контрагент.НомерЛС,
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.КассаККМ.Подразделение,
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.КассаККМ,
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.Организация,
+		АЭС_ПлатежиСторонниеУслуги.Номенклатура,
+		АЭС_ПлатежиСторонниеУслуги.ДокументПродажи,
+		NULL,
+		АЭС_ПлатежиСторонниеУслуги.ПериодПлатежа,
+		АЭС_ПлатежиСторонниеУслуги.Номенклатура.Наименование,
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.Дата,
+		NULL,
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.Ссылка,
+		АЭС_ПлатежиСторонниеУслуги.ПризнакСпособаРасчета,
+		NULL,
+		NULL
+	ИЗ
+		Документ.АЭС_Платежи.СторонниеУслуги КАК АЭС_ПлатежиСторонниеУслуги
+	ГДЕ
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;ОкончаниеПериода
+		И АЭС_ПлатежиСторонниеУслуги.Ссылка.Статус = ЗНАЧЕНИЕ(перечисление.СтатусыЧековККМ.Пробит)
+		И АЭС_ПлатежиСторонниеУслуги.Ссылка.Возврат = ЛОЖЬ
+	
+	СГРУППИРОВАТЬ ПО
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.Контрагент,
+		АЭС_ПлатежиСторонниеУслуги.ВидОплаты,
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.КассаККМ,
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.Кассир,
+		АЭС_ПлатежиСторонниеУслуги.ФормаОплаты,
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.Организация,
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.Контрагент.НомерЛС,
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.КассаККМ.Подразделение,
+		АЭС_ПлатежиСторонниеУслуги.Секция,
+		АЭС_ПлатежиСторонниеУслуги.Номенклатура,
+		АЭС_ПлатежиСторонниеУслуги.ДокументПродажи,
+		АЭС_ПлатежиСторонниеУслуги.Номенклатура.Наименование,
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.Дата,
+		АЭС_ПлатежиСторонниеУслуги.Ссылка.Ссылка,
+		АЭС_ПлатежиСторонниеУслуги.ПериодПлатежа,
+		АЭС_ПлатежиСторонниеУслуги.ПризнакСпособаРасчета) КАК ВложенныйЗапрос
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЧекККМ.ОплатаПлатежнымиКартами КАК ЧекККМОплатаПлатежнымиКартами
+		ПО ВложенныйЗапрос.ДокументПродажи = ЧекККМОплатаПлатежнымиКартами.Ссылка.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			СУММА(АЭС_ПлатежиОсновнаяДеятельность.Сумма) КАК Сумма,
+			АЭС_ПлатежиОсновнаяДеятельность.ДокументПродажи.ЧекККМ КАК ЧекККМ,
+			АЭС_ПлатежиОсновнаяДеятельность.НомерУслуги.Номенклатура КАК Номенклатура,
+			АЭС_ПлатежиОсновнаяДеятельность.ПериодПлатежа КАК ПериодПлатежа,
+			АЭС_ПлатежиОсновнаяДеятельность.ВидОплаты КАК ВидОплаты,
+			АЭС_ПлатежиОсновнаяДеятельность.ФормаОплаты КАК ФормаОплаты,
+			АЭС_ПлатежиОсновнаяДеятельность.Секция КАК Секция,
+			АЭС_ПлатежиОсновнаяДеятельность.ПоставщикУслуг КАК ПоставщикУслуг,
+			АЭС_ПлатежиОсновнаяДеятельность.ИсполнительУслуг КАК ИсполнительУслуг
+		ИЗ
+			Документ.АЭС_Платежи.ОсновнаяДеятельность КАК АЭС_ПлатежиОсновнаяДеятельность
+		ГДЕ
+			АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;ОкончаниеПериода
+			И АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Статус = ЗНАЧЕНИЕ(перечисление.СтатусыЧековККМ.Пробит)
+			И АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Возврат = ИСТИНА
+		
+		СГРУППИРОВАТЬ ПО
+			АЭС_ПлатежиОсновнаяДеятельность.ДокументПродажи.ЧекККМ,
+			АЭС_ПлатежиОсновнаяДеятельность.НомерУслуги.Номенклатура,
+			АЭС_ПлатежиОсновнаяДеятельность.ПериодПлатежа,
+			АЭС_ПлатежиОсновнаяДеятельность.ВидОплаты,
+			АЭС_ПлатежиОсновнаяДеятельность.ФормаОплаты,
+			АЭС_ПлатежиОсновнаяДеятельность.Секция,
+			АЭС_ПлатежиОсновнаяДеятельность.ПоставщикУслуг,
+			АЭС_ПлатежиОсновнаяДеятельность.ИсполнительУслуг
+		
+		ОБЪЕДИНИТЬ ВСЕ
+		
+		ВЫБРАТЬ
+			СУММА(АЭС_ПлатежиТовары.Сумма),
+			АЭС_ПлатежиТовары.ДокументПродажи.ЧекККМ,
+			АЭС_ПлатежиТовары.Номенклатура,
+			АЭС_ПлатежиТовары.Ссылка.ПериодПлатежа,
+			АЭС_ПлатежиТовары.ВидОплаты,
+			АЭС_ПлатежиТовары.ФормаОплаты,
+			АЭС_ПлатежиТовары.Секция,
+			NULL,
+			NULL
+		ИЗ
+			Документ.АЭС_Платежи.Товары КАК АЭС_ПлатежиТовары
+		ГДЕ
+			АЭС_ПлатежиТовары.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;ОкончаниеПериода
+			И АЭС_ПлатежиТовары.Ссылка.Статус = ЗНАЧЕНИЕ(перечисление.СтатусыЧековККМ.Пробит)
+			И АЭС_ПлатежиТовары.Ссылка.Возврат = ИСТИНА
+		
+		СГРУППИРОВАТЬ ПО
+			АЭС_ПлатежиТовары.ДокументПродажи.ЧекККМ,
+			АЭС_ПлатежиТовары.Номенклатура,
+			АЭС_ПлатежиТовары.ФормаОплаты,
+			АЭС_ПлатежиТовары.ВидОплаты,
+			АЭС_ПлатежиТовары.Секция,
+			АЭС_ПлатежиТовары.Ссылка.ПериодПлатежа
+		
+		ОБЪЕДИНИТЬ ВСЕ
+		
+		ВЫБРАТЬ
+			СУММА(АЭС_ПлатежиСторонниеУслуги.Сумма),
+			АЭС_ПлатежиСторонниеУслуги.ДокументПродажи.ЧекККМ,
+			АЭС_ПлатежиСторонниеУслуги.Номенклатура,
+			АЭС_ПлатежиСторонниеУслуги.ПериодПлатежа,
+			АЭС_ПлатежиСторонниеУслуги.ВидОплаты,
+			АЭС_ПлатежиСторонниеУслуги.ФормаОплаты,
+			АЭС_ПлатежиСторонниеУслуги.Секция,
+			NULL,
+			NULL
+		ИЗ
+			Документ.АЭС_Платежи.СторонниеУслуги КАК АЭС_ПлатежиСторонниеУслуги
+		ГДЕ
+			АЭС_ПлатежиСторонниеУслуги.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;ОкончаниеПериода
+			И АЭС_ПлатежиСторонниеУслуги.Ссылка.Статус = ЗНАЧЕНИЕ(перечисление.СтатусыЧековККМ.Пробит)
+			И АЭС_ПлатежиСторонниеУслуги.Ссылка.Возврат = ИСТИНА
+		
+		СГРУППИРОВАТЬ ПО
+			АЭС_ПлатежиСторонниеУслуги.ДокументПродажи.ЧекККМ,
+			АЭС_ПлатежиСторонниеУслуги.Номенклатура,
+			АЭС_ПлатежиСторонниеУслуги.ПериодПлатежа,
+			АЭС_ПлатежиСторонниеУслуги.ФормаОплаты,
+			АЭС_ПлатежиСторонниеУслуги.ВидОплаты,
+			АЭС_ПлатежиСторонниеУслуги.Секция) КАК ВложенныйЗапросВозврат
+		ПО ВложенныйЗапрос.ДокументПродажи = ВложенныйЗапросВозврат.ЧекККМ
+			И ВложенныйЗапрос.Номенклатура = ВложенныйЗапросВозврат.Номенклатура
+			И ВложенныйЗапрос.ПериодПлатежа = ВложенныйЗапросВозврат.ПериодПлатежа
+			И ВложенныйЗапрос.ВидОплаты = ВложенныйЗапросВозврат.ВидОплаты
+			И ВложенныйЗапрос.ФормаОплаты = ВложенныйЗапросВозврат.ФормаОплаты
+			И ВложенныйЗапрос.Секция = ВложенныйЗапросВозврат.Секция
+			И (ВложенныйЗапрос.ИсполнительУслуг = ВложенныйЗапросВозврат.ИсполнительУслуг Или ВложенныйЗапрос.ИсполнительУслуг Есть NULL)
+			И (ВложенныйЗапрос.ПоставщикУслуг = ВложенныйЗапросВозврат.ПоставщикУслуг Или ВложенныйЗапрос.ПоставщикУслуг Есть NULL)
+			
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Процент КАК ВТ_Процент
+		ПО ВложенныйЗапрос.Ссылка = ВТ_Процент.Ссылка
+
+СГРУППИРОВАТЬ ПО
+	ВложенныйЗапрос.Кассир,
+	ВложенныйЗапрос.Секция,
+	ВложенныйЗапрос.ВидОплаты,
+	ВложенныйЗапрос.ФормаОплаты,
+	ВложенныйЗапрос.Контрагент,
+	ВложенныйЗапрос.НомерЛС,
+	ВложенныйЗапрос.Подразделение,
+	ВложенныйЗапрос.КассаККМ,
+	ВложенныйЗапрос.Организация,
+	ЧекККМОплатаПлатежнымиКартами.НомерПлатежнойКарты,
+	ВложенныйЗапрос.ДокументПродажи,
+	ВЫБОР
+		КОГДА ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.Электроэнергия)
+				ИЛИ ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.Электроэнергия_Аванс)
+				ИЛИ ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.ПлатаЗаЭЭНаСодержаниеОИ)
+				ИЛИ ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.Отключение)
+				ИЛИ ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.Подключение)
+			ТОГДА ВложенныйЗапрос.ПериодПлатежа
+		ИНАЧЕ ВЫБОР
+				КОГДА ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.ЭлектротехническиеТоварыСобственные)
+						ИЛИ ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.ПродажаТовараПоДоговоруКомиссии)
+						ИЛИ ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.ПродажаТовараПоДоговоруКонсигнации)
+					ТОГДА ПОДСТРОКА(ВложенныйЗапрос.НоменклатураНаименование, 0, 150) + ВЫБОР
+							КОГДА ВложенныйЗапрос.Примечание ЕСТЬ NULL
+								ТОГДА ""
+							ИНАЧЕ ПОДСТРОКА(ВложенныйЗапрос.Примечание, 0, 150)
+						КОНЕЦ
+				ИНАЧЕ ВЫБОР
+						КОГДА ВложенныйЗапрос.ВидОплаты = ЗНАЧЕНИЕ(Справочник.АЭС_ВидОплаты.УстановкаСнятиеПУ)
+							ТОГДА ВложенныйЗапрос.Контрагент
+						ИНАЧЕ ВложенныйЗапрос.Примечание
+					КОНЕЦ
+			КОНЕЦ
+	КОНЕЦ,
+	ВложенныйЗапрос.Дата,
+	ВложенныйЗапрос.ПризнакСпособаРасчета,
+	ВложенныйЗапрос.Номенклатура,
+	ВЫБОР
+		КОГДА ВложенныйЗапрос.ПоставщикУслуг = ЗНАЧЕНИЕ(Справочник.Партнеры.ПустаяСсылка)
+			ТОГДА ВложенныйЗапрос.ИсполнительУслуг
+		ИНАЧЕ ВложенныйЗапрос.ПоставщикУслуг
+	КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_Процент</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>СуммаБезКомиссии</dataPath>
+		<expression>ПолученоБезналичными - Комиссия</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сумма без комиссии</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Format</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КорСчет</dataPath>
+		<expression>Выбор 
+    когда ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.Электроэнергия") Тогда "62.01" 
+    Иначе Выбор 
+        Когда  ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.ПлатаЗаЭЭНаСодержаниеОИ") тогда "76.09.1" 
+        Иначе Выбор 
+            Когда  ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.Пени") тогда "76.02" 
+            Иначе Выбор 
+                Когда ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.Госпошлина") 
+					  ИЛИ ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.ПениПоСудебномуАкту") тогда "76.02" 
+                Иначе Выбор 
+                    Когда ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.ЭлектротехническиеТоварыСобственные") 
+                        ИЛИ ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.ПродажаТовараПоДоговоруКонсигнации") тогда "90.01.1" 
+                    Иначе Выбор  
+                        Когда ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.УстановкаСнятиеПУ") Тогда "62.02" 
+                        Иначе Выбор  
+                            Когда ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.ПриемУслугОтФизЛицВПользуПринципалаПоАгентскомуДоговору") 
+                                ИЛИ  ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.ПриемЭлектроэнергииВПользуПринципалаПоАгентскомуДоговору")
+								ИЛИ  ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.КомиссионноеВознаграждение") Тогда "76.09.2"  
+                            Иначе Выбор  
+                                Когда ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.ПрочиеОперации") 
+								ИЛИ ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.Отключение") 
+								ИЛИ ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.Подключение") Тогда "62.01"  
+                                Иначе Выбор  
+                                    Когда ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.Электроэнергия_Аванс") Тогда "62.02" 
+                                     Иначе Выбор 
+                                        Когда ВидОплаты = ПредопределенноеЗначение("Справочник.АЭС_ВидОплаты.Субаренда") Тогда "76.06.1"
+                                        Иначе "76.09.2" 
+                                        Конец
+                                    Конец 
+                                Конец 
+                            Конец 
+                        Конец 
+                    Конец 
+                Конец 
+            Конец 
+        Конец  
+Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Кор. счет</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>ПолученоНаличными</dataPath>
+		<expression>Сумма(ПолученоНаличными)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПолученоБезналичными</dataPath>
+		<expression>Сумма(ПолученоБезналичными)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Комиссия</dataPath>
+		<expression>Сумма(Комиссия)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаБезКомиссии</dataPath>
+		<expression>Сумма(СуммаБезКомиссии)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>Сумма(Количество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Сумма</dataPath>
+		<expression>Сумма(Сумма)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>ОкончаниеПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Окончание периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>РеестрПлатежей</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>РеестрПлатежей</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>accfd6cf-e667-4660-aaa3-8d95e4cd2591</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>3540d3ad-1bf4-4fe3-be23-0c391b352715</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">ВидОплаты</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>40a2bbe9-1ad9-4604-9cc9-f5a3557c8d93</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">КассаККМ</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>3cbd1029-e90b-4ab7-9dff-c8d389584019</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">НомерЛС</dcsset:left>
+					<dcsset:comparisonType>BeginsWith</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string"/>
+					<dcsset:userSettingID>1f0ddbb2-422a-4b02-9739-1344f8324510</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">ПризнакСпособаРасчета</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>4d8bb0c6-50c0-4795-9d7f-d8bc80fd3f42</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>79e8528b-add1-4d7c-aed9-c21168588623</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Today</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>cc78f4bd-0946-464d-91bd-90fb3f205dbd</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>d2e6e60f-a5df-49b7-af7f-69c8200e7323</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Кассир</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПолученоНаличными</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПолученоБезналичными</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Комиссия</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаБезКомиссии</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Сумма</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>TotalsPlacement</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Секция</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПолученоБезналичными</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПолученоНаличными</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Комиссия</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СуммаБезКомиссии</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Сумма</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ВидОплаты</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ВидОплаты</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>КорСчет</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ПолученоБезналичными</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ПолученоНаличными</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Комиссия</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>СуммаБезКомиссии</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Сумма</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>НомерЛС</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Контрагент</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Подразделение</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ПолученоНаличными</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ПолученоБезналичными</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Комиссия</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>СуммаБезКомиссии</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Сумма</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Количество</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>НомерПлатежнойКарты</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Примечание</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>Дата</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ПризнакСпособаРасчета</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ПоставщикУслуг</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

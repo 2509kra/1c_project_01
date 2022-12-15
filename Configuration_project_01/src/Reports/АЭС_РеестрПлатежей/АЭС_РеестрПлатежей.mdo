@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f422de4b-ef39-4674-b57f-895570006b71">
+  <producedTypes>
+    <objectType typeId="dfff1342-3fbc-4ba9-b1ac-a5575038e7c2" valueTypeId="c827e4ea-66ac-4dd0-af2a-9f86e46356c8"/>
+    <managerType typeId="a3bbcb00-903c-46c9-8597-05a16fa2d96f" valueTypeId="ac4c2530-cd24-4393-b79b-950511278be1"/>
+  </producedTypes>
+  <name>АЭС_РеестрПлатежей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реестр платежей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.АЭС_РеестрПлатежей.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <templates uuid="4977ad39-e367-4761-80a0-9ac4dce07496">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

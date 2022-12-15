@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f74d7e3e-be98-4981-a8b8-1319b720f1d6">
+  <name>АЭС_Кассир</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кассир (АЭС)</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.АЭС_РабочееМестоКассира</content>
+  <content>DataProcessor.АЭС_ФормированиеСводныхПКО</content>
+  <content>Catalog.НастройкиРМК</content>
+  <content>DataProcessor.АЭС_ПанельАдминистрированияРМК</content>
+  <content>Report.АЭС_РеестрСводныхПКО</content>
+  <content>Report.АЭС_РеестрПлатежей</content>
+  <content>DataProcessor.АЭС_ВыгрузкаПКО</content>
+  <content>Document.ПриходныйКассовыйОрдер</content>
+  <content>Document.РасходныйКассовыйОрдер</content>
+  <content>CommonCommand.ПанельОтчетовСклад</content>
+  <content>Document.ЛистКассовойКниги</content>
+  <content>DataProcessor.АЭС_ОбработкаОчередиЧековККМвСТЭК</content>
+  <content>Report.АЭС_АналогZОтчета</content>
+  <content>CommonCommand.АЭС_ПолныйОтчетПоКартам</content>
+  <content>Report.АЭС_ОтчетКассира</content>
+  <content>Document.ИнвентаризацияНаличныхДенежныхСредств</content>
+  <content>Report.РеестрПлатежей_ИнтернетМагазин</content>
+</mdclass:Subsystem>

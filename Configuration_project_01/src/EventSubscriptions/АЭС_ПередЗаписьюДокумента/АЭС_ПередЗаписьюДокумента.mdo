@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c16f2f15-9059-4364-b520-87976f919e8c">
+  <name>АЭС_ПередЗаписьюДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС перед записью документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ОтчетОРозничныхПродажах</types>
+    <types>DocumentObject.РасходныйКассовыйОрдер</types>
+    <types>DocumentObject.ПриходныйКассовыйОрдер</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.АЭС_Сервер.АЭС_ПередЗаписьюДокументаПередЗаписью</handler>
+</mdclass:EventSubscription>

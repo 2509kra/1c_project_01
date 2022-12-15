@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="adc6f0b5-44dc-4770-aa75-abfba0c06ac0">
+  <name>АЭС_Бухгалтер</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС бухгалтер</value>
+  </synonym>
+</mdclass:Role>

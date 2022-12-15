@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6c265e9-ead1-4c98-8f94-9b91506e029c">
+  <producedTypes>
+    <objectType typeId="2c023253-05f0-45d9-8cf2-3c2f440bbf74" valueTypeId="aac90f22-382a-4b9d-b3f3-8003ef6118bc"/>
+    <managerType typeId="035001cb-0d7f-4082-9f4b-56bd4890ba54" valueTypeId="579bb300-df62-45c2-b948-99671b3606bb"/>
+  </producedTypes>
+  <name>АЭС_ОтчетКассира</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет кассира (АЭС)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.АЭС_ОтчетКассира.Form.АЭС_ОтчетКассира</defaultForm>
+  <attributes uuid="4520e966-b442-4e93-8546-ef4d183ac711">
+    <name>ДатаФормирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата формирования</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4e1f703c-fb26-44e6-bf87-fb199a4cb44b">
+    <name>КассаККМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса ККМ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КассыККМ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Касса ККМ, связанная с фискальным регистратором.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2682ff73-2065-4271-8876-efb8ddab5bc2">
+    <name>Касса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Кассы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Касса организации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3341b73b-9209-4b28-be35-d208351a7a33">
+    <name>Кассир</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кассир</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="7b3b9d08-82f4-45b7-aee7-26b79e116677">
+    <name>АЭС_ОтчетКассира</name>
+    <synonym>
+      <key>ru</key>
+      <value>АЭС - Отчет кассира</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9e44d4c7-2ba7-4555-9d87-bbd0359df4d6">
+    <name>ПФ_MXL_ЛистКассовойКниги</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЛистКассовойКниги</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

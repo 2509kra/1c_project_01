@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d832b0db-5d43-4ef3-9c39-a40b72ab4ff8">
+  <name>АЭС_Штрихкодирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС штрихкодирование</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

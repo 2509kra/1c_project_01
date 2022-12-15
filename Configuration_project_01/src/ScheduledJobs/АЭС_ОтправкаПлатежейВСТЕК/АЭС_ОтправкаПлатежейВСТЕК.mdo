@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42293f0b-b37c-4b20-891c-9360c9b3db13">
+  <name>АЭС_ОтправкаПлатежейВСТЕК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправка платежей в СТЕК</value>
+  </synonym>
+  <methodName>CommonModule.АЭС_Стек.АЭС_ОтправкаПлатежейВСТЕК</methodName>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

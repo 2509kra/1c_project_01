@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="728df2bc-3584-4846-be2a-489f944878c2">
+  <producedTypes>
+    <managerType typeId="5a726ac8-0a8f-442c-99de-4bb6b09ec652" valueTypeId="4ef7427d-4cd4-4b61-a0fd-ff00184d56e9"/>
+    <valueManagerType typeId="fbad2eb1-c815-4066-991e-cf9bc8a1cc4d" valueTypeId="f86e154f-ff66-4871-91ec-33139ad4a411"/>
+    <valueKeyType typeId="1df20ac7-1051-5398-b8d4-5afe070848df" valueTypeId="fb3503b3-a6ae-5594-9da8-6a0f7b3d12e9"/>
+  </producedTypes>
+  <name>АЭС_ПорцияВыгрузкиПлатежейВСТЕК</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС порция выгрузки платежей в СТЕК</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

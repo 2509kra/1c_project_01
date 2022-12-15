@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b72aa6a2-c06a-4889-a274-237287f2fc87">
+  <producedTypes>
+    <selectionType typeId="83db6972-678a-4f7d-a260-64280241d31a" valueTypeId="bf70284f-a729-46d6-bad6-383e8c24cba6"/>
+    <listType typeId="79908ed5-c542-40ce-b6f4-739cd0ab87f2" valueTypeId="5e7b4e49-f699-4608-a5b9-1f6f9bb95350"/>
+    <managerType typeId="1a76368f-ad46-4eca-899b-a94964a9dba1" valueTypeId="3d16a4b0-3ef3-437a-8aca-07f6af272f87"/>
+    <recordSetType typeId="a5f490bd-8982-4975-a04e-5abd5b143037" valueTypeId="af559a59-bd96-4604-87a9-f6d817b65c64"/>
+    <recordKeyType typeId="eef7d517-5319-4157-a4fc-e0d5b6ccb97e" valueTypeId="9b7bd4b1-d1fa-44f2-b6bb-e2b8bc2a33dc"/>
+    <recordType typeId="ef144246-d903-4c58-a5ed-8979bd655ef2" valueTypeId="911aaebd-010b-49cb-98ba-590d3aee9f12"/>
+    <recordManagerType typeId="cbc895e4-7001-4534-985e-ec260c51e309" valueTypeId="eb558a17-a69d-4429-aded-5928335a4d10"/>
+  </producedTypes>
+  <name>АЭС_КонсигнантыПринципалыНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС консигнанты принципалы номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="7396a908-0826-4b5f-a09f-f7b818aedf12">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="170ddd6b-e427-400d-8b98-c57d701f89b0">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2f370780-f452-43cc-a9c9-4fea5ddc3cd3">
+    <name>КонсигнантыПринципалы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Консигнанты принципалы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+      <types>CatalogRef.Партнеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

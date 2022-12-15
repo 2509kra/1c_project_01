@@ -86,7 +86,11 @@
   <subsystems>Subsystem.CRMИМаркетинг</subsystems>
   <subsystems>Subsystem.Администрирование</subsystems>
   <subsystems>Subsystem.АдминистрированиеСервиса</subsystems>
+  <subsystems>Subsystem.АЭС_Кассир</subsystems>
+  <subsystems>Subsystem.АЭС_КоллЦентр</subsystems>
+  <subsystems>Subsystem.АЭС_Служебный</subsystems>
   <subsystems>Subsystem.БанкИКассаБазовая</subsystems>
+  <subsystems>Subsystem.Битрикс</subsystems>
   <subsystems>Subsystem.Взаимодействия</subsystems>
   <subsystems>Subsystem.Глоссарий</subsystems>
   <subsystems>Subsystem.ГосИС</subsystems>
@@ -114,13 +118,9 @@
   <subsystems>Subsystem.СлужебныеПодсистемы</subsystems>
   <subsystems>Subsystem.СтандартныеПодсистемы</subsystems>
   <subsystems>Subsystem.Тестирование</subsystems>
-  <subsystems>Subsystem.АЭС_Служебный</subsystems>
   <subsystems>Subsystem.ТехнологияСервиса</subsystems>
-  <subsystems>Subsystem.АЭС_Кассир</subsystems>
-  <subsystems>Subsystem.АЭС_КоллЦентр</subsystems>
   <subsystems>Subsystem.ФинансовыйРезультатИКонтроллинг</subsystems>
   <subsystems>Subsystem.ЭлектронноеВзаимодействие</subsystems>
-  <subsystems>Subsystem.Битрикс</subsystems>
   <styleItems>StyleItem.БудущиеПодпискиЦвет</styleItems>
   <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
   <styleItems>StyleItem.ВажныеДанныеЦветБЭД</styleItems>
@@ -380,6 +380,9 @@
   <commonPictures>CommonPicture.АдминистрированиеСервиса</commonPictures>
   <commonPictures>CommonPicture.АннулироватьЗаявкуГосИС</commonPictures>
   <commonPictures>CommonPicture.АрхивАнкета</commonPictures>
+  <commonPictures>CommonPicture.Б_Баннер</commonPictures>
+  <commonPictures>CommonPicture.Б_ВыполнениеДлительнойОперации</commonPictures>
+  <commonPictures>CommonPicture.Б_КартинкаПодсистемы</commonPictures>
   <commonPictures>CommonPicture.БизнесСеть</commonPictures>
   <commonPictures>CommonPicture.БизнесСетьQRКод</commonPictures>
   <commonPictures>CommonPicture.БизнесСетьЗагрузка</commonPictures>
@@ -788,6 +791,7 @@
   <commonPictures>CommonPicture.НастроитьДиапазоныДопустимыхЦен</commonPictures>
   <commonPictures>CommonPicture.НастроитьИнтеграциюАвтоматически</commonPictures>
   <commonPictures>CommonPicture.НастройкаБЭД</commonPictures>
+  <commonPictures>CommonPicture.НастройкаВыполненияРегламентныхЗаданий</commonPictures>
   <commonPictures>CommonPicture.НастройкаОбменаДаннымиАктивна</commonPictures>
   <commonPictures>CommonPicture.НастройкаОбменаДаннымиОтключена</commonPictures>
   <commonPictures>CommonPicture.НастройкаПоискаАссоциацийНоменклатурыПродаваемойСовместно</commonPictures>
@@ -1156,7 +1160,6 @@
   <commonPictures>CommonPicture.РедактироватьМакет</commonPictures>
   <commonPictures>CommonPicture.РедактироватьФайл</commonPictures>
   <commonPictures>CommonPicture.РедактироватьФайл24</commonPictures>
-  <commonPictures>CommonPicture.СТЕК_лого</commonPictures>
   <commonPictures>CommonPicture.РежимИспользованияПриложенияВСервисеЛокально</commonPictures>
   <commonPictures>CommonPicture.РежимОбновленияВСпискеРаботаСНоменклатурой</commonPictures>
   <commonPictures>CommonPicture.РежимПросмотраСпискаИерархическийСписокБЭД</commonPictures>
@@ -1261,10 +1264,6 @@
   <commonPictures>CommonPicture.СостояниеЕстьПроблемыОпределенияПоступленияГосИС</commonPictures>
   <commonPictures>CommonPicture.СостояниеНакладной</commonPictures>
   <commonPictures>CommonPicture.СостояниеНоменклатурыПродаваемойСовместно</commonPictures>
-  <commonPictures>CommonPicture.НастройкаВыполненияРегламентныхЗаданий</commonPictures>
-  <commonPictures>CommonPicture.Б_КартинкаПодсистемы</commonPictures>
-  <commonPictures>CommonPicture.Б_Баннер</commonPictures>
-  <commonPictures>CommonPicture.Б_ВыполнениеДлительнойОперации</commonPictures>
   <commonPictures>CommonPicture.СостояниеОбменаДанными</commonPictures>
   <commonPictures>CommonPicture.СостояниеОбменаДаннымиОшибка</commonPictures>
   <commonPictures>CommonPicture.СостояниеОжидаетсяПоступлениеГосИС</commonPictures>
@@ -1346,6 +1345,7 @@
   <commonPictures>CommonPicture.СтатусыСопоставленияОбъектов</commonPictures>
   <commonPictures>CommonPicture.СтатусыУказанияСерий</commonPictures>
   <commonPictures>CommonPicture.СтатусыЭДОМК</commonPictures>
+  <commonPictures>CommonPicture.СТЕК_лого</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВверх</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВлево</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВниз</commonPictures>
@@ -1482,6 +1482,7 @@
   <commonPictures>CommonPicture.ЯндексКассаБЭД</commonPictures>
   <commonPictures>CommonPicture.ЯндексКассаЛоготипБЭД</commonPictures>
   <sessionParameters>SessionParameter.АвторизованныйПользователь</sessionParameters>
+  <sessionParameters>SessionParameter.аэсНастройкиСоединенияSQL</sessionParameters>
   <sessionParameters>SessionParameter.БуферОбмена</sessionParameters>
   <sessionParameters>SessionParameter.ВерсииШаблоновОграниченияДоступа</sessionParameters>
   <sessionParameters>SessionParameter.ВерсияРасширений</sessionParameters>
@@ -1525,7 +1526,6 @@
   <sessionParameters>SessionParameter.ПараметрыОграниченияДоступа</sessionParameters>
   <sessionParameters>SessionParameter.ПараметрыОкруженияБИП_Новости</sessionParameters>
   <sessionParameters>SessionParameter.ПараметрыОкруженияБИП_ОблачныйАрхив</sessionParameters>
-  <sessionParameters>SessionParameter.аэсНастройкиСоединенияSQL</sessionParameters>
   <sessionParameters>SessionParameter.ПараметрыСеансаСинхронизацииДанных</sessionParameters>
   <sessionParameters>SessionParameter.ПаролиСинхронизацииДанных</sessionParameters>
   <sessionParameters>SessionParameter.ПодключенныеРасширения</sessionParameters>
@@ -1558,6 +1558,12 @@
   <sessionParameters>SessionParameter.ХозяйственныеОперацииСНастройкамиОграниченийДоступа</sessionParameters>
   <roles>Role.АдминистраторСистемы</roles>
   <roles>Role.Администрирование</roles>
+  <roles>Role.АЭС_БазовыеПрава</roles>
+  <roles>Role.АЭС_Бухгалтер</roles>
+  <roles>Role.АЭС_Кассир</roles>
+  <roles>Role.АЭС_ПолныеПрава</roles>
+  <roles>Role.АЭС_ПраваНаНовыеОбъектыЭкстренно</roles>
+  <roles>Role.Б_Роль</roles>
   <roles>Role.БазовыеПраваБИД</roles>
   <roles>Role.БазовыеПраваБП</roles>
   <roles>Role.БазовыеПраваБСП</roles>
@@ -1965,6 +1971,7 @@
   <roles>Role.ПоискТорговыхПредложений</roles>
   <roles>Role.ПоискТорговыхПредложенийБизнесСеть</roles>
   <roles>Role.ПолныеПрава</roles>
+  <roles>Role.ПолныеПраваФОП</roles>
   <roles>Role.ПолучениеОбновленийКлассификаторов</roles>
   <roles>Role.ПолучениеПлатежнойСсылкиДляЯндексКассы</roles>
   <roles>Role.ПостановкаКонтрагентовНаМониторингСПАРКРиски</roles>
@@ -2088,9 +2095,6 @@
   <roles>Role.УтверждениеРаспоряженийНаПеремещениеДенежныхСредств</roles>
   <roles>Role.ЧтениеАвансовыхОтчетов</roles>
   <roles>Role.ЧтениеАктовВыполненныхРабот</roles>
-  <roles>Role.АЭС_Бухгалтер</roles>
-  <roles>Role.АЭС_БазовыеПрава</roles>
-  <roles>Role.ПолныеПраваФОП</roles>
   <roles>Role.ЧтениеАктовОРасхожденияхПослеОтгрузки</roles>
   <roles>Role.ЧтениеАктовОРасхожденияхПослеПеремещения</roles>
   <roles>Role.ЧтениеАктовОРасхожденияхПослеПриемкиПоВозвратуОтКлиента</roles>
@@ -2130,9 +2134,6 @@
   <roles>Role.ЧтениеДвиженийДоходыРасходыПрочиеАктивыПассивы</roles>
   <roles>Role.ЧтениеДвиженийКонтрагентДоходыРасходы</roles>
   <roles>Role.ЧтениеДвиженийКонтрагентКонтрагент</roles>
-  <roles>Role.АЭС_ПолныеПрава</roles>
-  <roles>Role.АЭС_ПраваНаНовыеОбъектыЭкстренно</roles>
-  <roles>Role.АЭС_Кассир</roles>
   <roles>Role.ЧтениеДвиженийНоменклатураДоходыРасходы</roles>
   <roles>Role.ЧтениеДвиженийНоменклатураКонтрагент</roles>
   <roles>Role.ЧтениеДвиженийНоменклатураНоменклатура</roles>
@@ -2204,7 +2205,6 @@
   <roles>Role.ЧтениеНастроекРаспределенияЗатрат</roles>
   <roles>Role.ЧтениеНастроекТорговыхПредложений</roles>
   <roles>Role.ЧтениеНастроекЭлектронногоВзаимодействия</roles>
-  <roles>Role.Б_Роль</roles>
   <roles>Role.ЧтениеНачисленияКредитовИДепозитов</roles>
   <roles>Role.ЧтениеНовостей</roles>
   <roles>Role.ЧтениеНоменклатурыКонтрагентовБЭД</roles>
@@ -2345,6 +2345,7 @@
   <roles>Role.ЧтениеШтрихкодовУпаковокТоваров</roles>
   <roles>Role.ЧтениеЭлектронныхДокументов</roles>
   <commonTemplates>CommonTemplate.fresh</commonTemplates>
+  <commonTemplates>CommonTemplate.АЭС_ОписаниеИзмененийКонфигурации</commonTemplates>
   <commonTemplates>CommonTemplate.ДополнительныйЛистКнигиПокупок1137</commonTemplates>
   <commonTemplates>CommonTemplate.ДополнительныйЛистКнигиПокупок1137_2017</commonTemplates>
   <commonTemplates>CommonTemplate.ДополнительныйЛистКнигиПокупок735</commonTemplates>
@@ -2423,7 +2424,6 @@
   <commonTemplates>CommonTemplate.ДрайверСканкодТерминалыСбораДанныхCipherLab8G2</commonTemplates>
   <commonTemplates>CommonTemplate.ДрайверСканкодТерминалыСбораДанныхNative</commonTemplates>
   <commonTemplates>CommonTemplate.ДрайверСканситиПринтераЭтикеток</commonTemplates>
-  <commonTemplates>CommonTemplate.АЭС_ОписаниеИзмененийКонфигурации</commonTemplates>
   <commonTemplates>CommonTemplate.ДрайверСканситиТерминалСбораДанныхCitySoftBusiness</commonTemplates>
   <commonTemplates>CommonTemplate.ДрайверСканситиТерминалСбораДанныхCitySoftLite</commonTemplates>
   <commonTemplates>CommonTemplate.ДрайверСканситиТерминалСбораДанныхCitySoftStandart</commonTemplates>
@@ -2529,6 +2529,21 @@
   <commonModules>CommonModule.АудитСостоянияСистемыКлиент</commonModules>
   <commonModules>CommonModule.АудитСостоянияСистемыКлиентСервер</commonModules>
   <commonModules>CommonModule.АудитСостоянияСистемыПереопределяемый</commonModules>
+  <commonModules>CommonModule.АЭС_ДвиженияДокументов</commonModules>
+  <commonModules>CommonModule.АЭС_Клиент</commonModules>
+  <commonModules>CommonModule.АЭС_КлиентСервер</commonModules>
+  <commonModules>CommonModule.АЭС_КоллЦентр</commonModules>
+  <commonModules>CommonModule.АЭС_Сервер</commonModules>
+  <commonModules>CommonModule.АЭС_Стек</commonModules>
+  <commonModules>CommonModule.АЭС_Штрихкодирование</commonModules>
+  <commonModules>CommonModule.Б_ОбменССайтомКлиентСервер</commonModules>
+  <commonModules>CommonModule.Б_ОбменССайтомСервер</commonModules>
+  <commonModules>CommonModule.Б_ОбменССайтомСерверВыгрузкаДанных</commonModules>
+  <commonModules>CommonModule.Б_ОбменССайтомСерверЗагрузкиДанных</commonModules>
+  <commonModules>CommonModule.Б_ОбменССайтомСерверПовтИсп</commonModules>
+  <commonModules>CommonModule.Б_ОбщиеПроцедурыИФункцииСервер</commonModules>
+  <commonModules>CommonModule.Б_ПечатьЧековКлиент</commonModules>
+  <commonModules>CommonModule.Б_ПечатьЧековСервер</commonModules>
   <commonModules>CommonModule.БизнесПроцессыИЗадачиВызовСервера</commonModules>
   <commonModules>CommonModule.БизнесПроцессыИЗадачиКлиент</commonModules>
   <commonModules>CommonModule.БизнесПроцессыИЗадачиКлиентПереопределяемый</commonModules>
@@ -3322,11 +3337,6 @@
   <commonModules>CommonModule.ОценкаПроизводительностиКлиентСервер</commonModules>
   <commonModules>CommonModule.ОценкаПроизводительностиПовтИсп</commonModules>
   <commonModules>CommonModule.ОценкаПроизводительностиСлужебный</commonModules>
-  <commonModules>CommonModule.АЭС_КлиентСервер</commonModules>
-  <commonModules>CommonModule.АЭС_Сервер</commonModules>
-  <commonModules>CommonModule.АЭС_Клиент</commonModules>
-  <commonModules>CommonModule.АЭС_Штрихкодирование</commonModules>
-  <commonModules>CommonModule.АЭС_Стек</commonModules>
   <commonModules>CommonModule.ОчередьЗаданий</commonModules>
   <commonModules>CommonModule.ОчередьЗаданийВнешнийИнтерфейс</commonModules>
   <commonModules>CommonModule.ОчередьЗаданийЛокализация</commonModules>
@@ -3395,7 +3405,6 @@
   <commonModules>CommonModule.ПодключаемыеКомандыПереопределяемый</commonModules>
   <commonModules>CommonModule.ПодключаемыеКомандыПовтИсп</commonModules>
   <commonModules>CommonModule.Подключение1СТакском</commonModules>
-  <commonModules>CommonModule.АЭС_КоллЦентр</commonModules>
   <commonModules>CommonModule.Подключение1СТакскомВызовСервера</commonModules>
   <commonModules>CommonModule.Подключение1СТакскомКлиент</commonModules>
   <commonModules>CommonModule.Подключение1СТакскомКлиентСервер</commonModules>
@@ -3558,15 +3567,6 @@
   <commonModules>CommonModule.РаботаСАдресамиКлиентСервер</commonModules>
   <commonModules>CommonModule.РаботаСБанками</commonModules>
   <commonModules>CommonModule.РаботаСБанкамиГлобальный</commonModules>
-  <commonModules>CommonModule.Б_ОбменССайтомКлиентСервер</commonModules>
-  <commonModules>CommonModule.Б_ОбменССайтомСервер</commonModules>
-  <commonModules>CommonModule.Б_ОбменССайтомСерверВыгрузкаДанных</commonModules>
-  <commonModules>CommonModule.Б_ОбменССайтомСерверЗагрузкиДанных</commonModules>
-  <commonModules>CommonModule.Б_ОбменССайтомСерверПовтИсп</commonModules>
-  <commonModules>CommonModule.Б_ОбщиеПроцедурыИФункцииСервер</commonModules>
-  <commonModules>CommonModule.Б_ПечатьЧековКлиент</commonModules>
-  <commonModules>CommonModule.Б_ПечатьЧековСервер</commonModules>
-  <commonModules>CommonModule.АЭС_ДвиженияДокументов</commonModules>
   <commonModules>CommonModule.РаботаСБанкамиКлиент</commonModules>
   <commonModules>CommonModule.РаботаСБанкамиПереопределяемый</commonModules>
   <commonModules>CommonModule.РаботаСБанкамиСлужебный</commonModules>
@@ -4157,6 +4157,7 @@
   <commonAttributes>CommonAttribute.НаименованиеЯзык2</commonAttributes>
   <commonAttributes>CommonAttribute.ОбластьДанныхВспомогательныеДанные</commonAttributes>
   <commonAttributes>CommonAttribute.ОбластьДанныхОсновныеДанные</commonAttributes>
+  <exchangePlans>ExchangePlan.Б_ОбменССайтом</exchangePlans>
   <exchangePlans>ExchangePlan.ИнтеграцияС1СДокументооборотомПереопределяемый</exchangePlans>
   <exchangePlans>ExchangePlan.МиграцияПриложений</exchangePlans>
   <exchangePlans>ExchangePlan.МобильноеПриложениеЗаказыКлиентов</exchangePlans>
@@ -4177,7 +4178,6 @@
   <exchangePlans>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
   <exchangePlans>ExchangePlan.СОтборами</exchangePlans>
   <exchangePlans>ExchangePlan.Удалить_ОбменУправлениеТорговлей_11_0_РозничнаяТорговля_1_0</exchangePlans>
-  <exchangePlans>ExchangePlan.Б_ОбменССайтом</exchangePlans>
   <xDTOPackages>XDTOPackage.AgentScripts</xDTOPackages>
   <xDTOPackages>XDTOPackage.ApdexExport</xDTOPackages>
   <xDTOPackages>XDTOPackage.ApdexExport_1_0_0_2</xDTOPackages>
@@ -4353,7 +4353,6 @@
   <xDTOPackages>XDTOPackage.Envelope</xDTOPackages>
   <xDTOPackages>XDTOPackage.EquipmentService</xDTOPackages>
   <xDTOPackages>XDTOPackage.EquipmentService_1_0_0_6</xDTOPackages>
-  <xDTOPackages>XDTOPackage.SFAKT1</xDTOPackages>
   <xDTOPackages>XDTOPackage.EquipmentService_1_0_0_7</xDTOPackages>
   <xDTOPackages>XDTOPackage.EquipmentService_2_0_0_3</xDTOPackages>
   <xDTOPackages>XDTOPackage.EquipmentService_3_0_0_0</xDTOPackages>
@@ -4367,6 +4366,7 @@
   <xDTOPackages>XDTOPackage.iso20022_camt053_001_02</xDTOPackages>
   <xDTOPackages>XDTOPackage.iso20022_pain001_001_03</xDTOPackages>
   <xDTOPackages>XDTOPackage.KORSFAKT</xDTOPackages>
+  <xDTOPackages>XDTOPackage.KORSFAKT1</xDTOPackages>
   <xDTOPackages>XDTOPackage.KORSFAKT_5_02</xDTOPackages>
   <xDTOPackages>XDTOPackage.ON_KORSCHFDOPPOK</xDTOPackages>
   <xDTOPackages>XDTOPackage.ON_KORSCHFDOPPR</xDTOPackages>
@@ -4383,6 +4383,7 @@
   <xDTOPackages>XDTOPackage.SBRF_settings</xDTOPackages>
   <xDTOPackages>XDTOPackage.ServiceCommon</xDTOPackages>
   <xDTOPackages>XDTOPackage.SFAKT</xDTOPackages>
+  <xDTOPackages>XDTOPackage.SFAKT1</xDTOPackages>
   <xDTOPackages>XDTOPackage.SFAKT_5_02</xDTOPackages>
   <xDTOPackages>XDTOPackage.VetDocumentВЕТИС</xDTOPackages>
   <xDTOPackages>XDTOPackage.WMSMobileClientExchange</xDTOPackages>
@@ -4392,7 +4393,6 @@
   <xDTOPackages>XDTOPackage.АдминистрированиеОбменаДанными</xDTOPackages>
   <xDTOPackages>XDTOPackage.АдминистрированиеОбменаДанными_2_4_5_1</xDTOPackages>
   <xDTOPackages>XDTOPackage.АдминистрированиеОбменаДаннымиКонтроль</xDTOPackages>
-  <xDTOPackages>XDTOPackage.KORSFAKT1</xDTOPackages>
   <xDTOPackages>XDTOPackage.АдминистрированиеОбменаДаннымиУправление</xDTOPackages>
   <xDTOPackages>XDTOPackage.Адрес</xDTOPackages>
   <xDTOPackages>XDTOPackage.АдресныйКлассификатор</xDTOPackages>
@@ -4475,6 +4475,12 @@
   <eventSubscriptions>EventSubscription.АвтономнаяРаботаПроверитьВозможностьЗаписиОбщихДанныхКонстанта</eventSubscriptions>
   <eventSubscriptions>EventSubscription.АвтономнаяРаботаПроверитьВозможностьЗаписиОбщихДанныхНаборЗаписей</eventSubscriptions>
   <eventSubscriptions>EventSubscription.АвтономнаяРаботаПроверитьВозможностьЗаписиОбщихДанныхНаборЗаписейРасчета</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.АЭС_ПередЗаписьюДокумента</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.АЭС_ПередЗаписьюЭлементаСправочника</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.АЭС_ПриЗаписиПлатежа</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.Б_ЗарегистрироватьИзмененияПередЗаписьюРегистраСведенийДляОбменаССайтами</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.Б_ЗарегистрироватьИзмененияПриЗаписиСправочникаДокументаДляОбменаССайтами</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.Б_ОчисткаИдентификаторовПриКопировании</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ВариантОтчетаПередУдалением</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ВариантыОтчетовПередУдалениемИдентификатораОбъектаМетаданных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ВариантыОтчетовПриУдаленииПользователя</eventSubscriptions>
@@ -4650,8 +4656,6 @@
   <eventSubscriptions>EventSubscription.ПриЗаписиКонстанты</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПриЗаписиКонстантыБЭД</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПриЗаписиПользователяНовости</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.АЭС_ПередЗаписьюЭлементаСправочника</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.АЭС_ПриЗаписиПлатежа</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПрикладнойДокументEDIПередЗаписью</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПрикладнойДокументEDIПриЗаписи</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПриОтправкеДанныхГлавному</eventSubscriptions>
@@ -4659,7 +4663,6 @@
   <eventSubscriptions>EventSubscription.ПриПолученииДанныхОтГлавного</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПриПолученииДанныхОтПодчиненного</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьВозможностьИзмененияНастроекОбменаДанными</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.АЭС_ПередЗаписьюДокумента</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередЗаписьюДокумента</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередЗаписьюДокументаЗащитаПерсональныхДанных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередЗаписьюНабораЗаписей</eventSubscriptions>
@@ -4679,9 +4682,6 @@
   <eventSubscriptions>EventSubscription.ПроверитьИзменениеФильтровОграниченияМиграцииДанных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьИзмененияДатВПредмете</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьНеобходимостьПереоценки</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.Б_ЗарегистрироватьИзмененияПередЗаписьюРегистраСведенийДляОбменаССайтами</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.Б_ЗарегистрироватьИзмененияПриЗаписиСправочникаДокументаДляОбменаССайтами</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.Б_ОчисткаИдентификаторовПриКопировании</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьНомерБизнесПроцессаПоДате</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьНомерДокументаПоДате</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьНомерДокументаПоДатеИОрганизации</eventSubscriptions>
@@ -4742,6 +4742,10 @@
   <scheduledJobs>ScheduledJob.АвтоматическоеНачислениеИСписаниеБонусныхБаллов</scheduledJobs>
   <scheduledJobs>ScheduledJob.АнализДанныхДляОповещенийКлиентам</scheduledJobs>
   <scheduledJobs>ScheduledJob.АрхивированиеЧековККМ</scheduledJobs>
+  <scheduledJobs>ScheduledJob.АЭС_ЗагрузкаКонтрагентов</scheduledJobs>
+  <scheduledJobs>ScheduledJob.АЭС_ОтправкаПлатежейВСТЕК</scheduledJobs>
+  <scheduledJobs>ScheduledJob.Б_ЗаданиеОбменССайтом</scheduledJobs>
+  <scheduledJobs>ScheduledJob.Б_ЗаданиеОбменССайтомОнлайн</scheduledJobs>
   <scheduledJobs>ScheduledJob.ВсеОбновленияНовостей</scheduledJobs>
   <scheduledJobs>ScheduledJob.ВсеОбновленияОблачногоАрхива</scheduledJobs>
   <scheduledJobs>ScheduledJob.ВсеОбновленияСПАРКРискиОбщее</scheduledJobs>
@@ -4805,7 +4809,6 @@
   <scheduledJobs>ScheduledJob.ПолучениеВыпискиОбменСБанками</scheduledJobs>
   <scheduledJobs>ScheduledJob.ПолучениеИОтправкаЭлектронныхПисем</scheduledJobs>
   <scheduledJobs>ScheduledJob.ПолучениеИУстановкаИсправленийКонфигурации</scheduledJobs>
-  <scheduledJobs>ScheduledJob.АЭС_ОтправкаПлатежейВСТЕК</scheduledJobs>
   <scheduledJobs>ScheduledJob.ПолучениеСубъектовДляСкрытияПерсональныхДанных</scheduledJobs>
   <scheduledJobs>ScheduledJob.ПолучениеУведомленийОтЯндексКассы</scheduledJobs>
   <scheduledJobs>ScheduledJob.ПолучениеЭлектронныхДокументов</scheduledJobs>
@@ -4814,7 +4817,6 @@
   <scheduledJobs>ScheduledJob.ПроверкаГотовностиСправкиСПАРКРиски</scheduledJobs>
   <scheduledJobs>ScheduledJob.ПроверкаКонтрагентов</scheduledJobs>
   <scheduledJobs>ScheduledJob.ПроверкаКонтрагентовБЭД</scheduledJobs>
-  <scheduledJobs>ScheduledJob.АЭС_ЗагрузкаКонтрагентов</scheduledJobs>
   <scheduledJobs>ScheduledJob.ПроверкаКонтрагентовБЭДВыполнение</scheduledJobs>
   <scheduledJobs>ScheduledJob.ПроверкаКэшаСостоянийФНС</scheduledJobs>
   <scheduledJobs>ScheduledJob.ПроверкаНовыхЭлектронныхДокументов</scheduledJobs>
@@ -4834,8 +4836,6 @@
   <scheduledJobs>ScheduledJob.СверткаРегистраСоответствиеНоменклатурыВЕТИС</scheduledJobs>
   <scheduledJobs>ScheduledJob.СверткаРегистраСоответствиеНоменклатурыЕГАИС</scheduledJobs>
   <scheduledJobs>ScheduledJob.СверткаРезервовТоваровОрганизаций</scheduledJobs>
-  <scheduledJobs>ScheduledJob.Б_ЗаданиеОбменССайтомОнлайн</scheduledJobs>
-  <scheduledJobs>ScheduledJob.Б_ЗаданиеОбменССайтом</scheduledJobs>
   <scheduledJobs>ScheduledJob.СинхронизацияДанных</scheduledJobs>
   <scheduledJobs>ScheduledJob.СинхронизацияДанныхСПриложениемВИнтернете</scheduledJobs>
   <scheduledJobs>ScheduledJob.СинхронизацияССервисомEDI</scheduledJobs>
@@ -4869,6 +4869,8 @@
   <settingsStorages>SettingsStorage.ХранилищеВариантовОтчетов</settingsStorages>
   <functionalOptions>FunctionalOption.АвтоматическиСоздаватьПартнеровПриОтправкеЭлектронногоЧекаПокупателю</functionalOptions>
   <functionalOptions>FunctionalOption.АктуальнаяДатаОбновленияПовторноИспользуемыхЗначенийМРО</functionalOptions>
+  <functionalOptions>FunctionalOption.Б_ИспользоватьМеханизмПечатиЧеков</functionalOptions>
+  <functionalOptions>FunctionalOption.Б_ИспользоватьОбменВРеальномВремени</functionalOptions>
   <functionalOptions>FunctionalOption.БазоваяВерсия</functionalOptions>
   <functionalOptions>FunctionalOption.ВалютыУпрИРеглУчетаСовпадают</functionalOptions>
   <functionalOptions>FunctionalOption.ВариантыВерсионированияОбъектов</functionalOptions>
@@ -5280,8 +5282,6 @@
   <functionalOptions>FunctionalOption.РаботаВМоделиСервиса</functionalOptions>
   <functionalOptions>FunctionalOption.РаботаВМоделиСервисаБТС</functionalOptions>
   <functionalOptions>FunctionalOption.РазрешенаРаботаСНовостями</functionalOptions>
-  <functionalOptions>FunctionalOption.Б_ИспользоватьМеханизмПечатиЧеков</functionalOptions>
-  <functionalOptions>FunctionalOption.Б_ИспользоватьОбменВРеальномВремени</functionalOptions>
   <functionalOptions>FunctionalOption.РазрешенаРаботаСНовостямиЧерезИнтернет</functionalOptions>
   <functionalOptions>FunctionalOption.РазрешенаРаботаСОблачнымАрхивом</functionalOptions>
   <functionalOptions>FunctionalOption.РазрешитьОбособлениеТоваровСверхПотребности</functionalOptions>
@@ -5609,6 +5609,18 @@
   <definedTypes>DefinedType.ШаблонЭтикеткиИС</definedTypes>
   <commonCommands>CommonCommand.АвтономнаяРабота</commonCommands>
   <commonCommands>CommonCommand.АвтономнаяРаботаВМоделиСервиса</commonCommands>
+  <commonCommands>CommonCommand.АЭС_ПолныйОтчетПоКартам</commonCommands>
+  <commonCommands>CommonCommand.Б_ВерсияМодуляОбновить</commonCommands>
+  <commonCommands>CommonCommand.Б_ДополнительныеВозможности</commonCommands>
+  <commonCommands>CommonCommand.Б_ЗакрытьСменуККМ</commonCommands>
+  <commonCommands>CommonCommand.Б_ЗапуститьРеалТаймОбменДокументов</commonCommands>
+  <commonCommands>CommonCommand.Б_ИмпортТоваровИзИнтернетМагазина</commonCommands>
+  <commonCommands>CommonCommand.Б_НаписатьТикетВТехподдержку</commonCommands>
+  <commonCommands>CommonCommand.Б_ОткрытьСменуККМ</commonCommands>
+  <commonCommands>CommonCommand.Б_ПерейтиНаДокументацию</commonCommands>
+  <commonCommands>CommonCommand.Б_ПерейтиНаФормумИнтеграции</commonCommands>
+  <commonCommands>CommonCommand.Б_ПосмотретьВебинарыПоИнтеграцииС1С</commonCommands>
+  <commonCommands>CommonCommand.Б_ПроверитьОплатыССайта</commonCommands>
   <commonCommands>CommonCommand.БанковскиеСчетаБазовая</commonCommands>
   <commonCommands>CommonCommand.ВидыКартЛояльности</commonCommands>
   <commonCommands>CommonCommand.ВремяТекущегоСеанса</commonCommands>
@@ -5793,6 +5805,7 @@
   <commonCommands>CommonCommand.ПанельОтчетовПланирование</commonCommands>
   <commonCommands>CommonCommand.ПанельОтчетовПродажи</commonCommands>
   <commonCommands>CommonCommand.ПанельОтчетовСклад</commonCommands>
+  <commonCommands>CommonCommand.ПанельОтчетовСклад_АЭС</commonCommands>
   <commonCommands>CommonCommand.ПанельОтчетовФинансовыйРезультатИКонтроллинг</commonCommands>
   <commonCommands>CommonCommand.ПанельСведенияОПредприятии</commonCommands>
   <commonCommands>CommonCommand.ПересчетыТоваровБазовая</commonCommands>
@@ -5830,8 +5843,6 @@
   <commonCommands>CommonCommand.СведенияОПользователе</commonCommands>
   <commonCommands>CommonCommand.СверкаИтоговПоКартам</commonCommands>
   <commonCommands>CommonCommand.СверткаИнформационнойБазы</commonCommands>
-  <commonCommands>CommonCommand.ПанельОтчетовСклад_АЭС</commonCommands>
-  <commonCommands>CommonCommand.АЭС_ПолныйОтчетПоКартам</commonCommands>
   <commonCommands>CommonCommand.СвязанныеДокументы</commonCommands>
   <commonCommands>CommonCommand.СвязатьсяСоСпециалистомОнлайнПоддержки</commonCommands>
   <commonCommands>CommonCommand.СинхронизацияДанныхВМоделиСервиса</commonCommands>
@@ -5842,17 +5853,6 @@
   <commonCommands>CommonCommand.СкрытьПерсональныеДанныеСубъектов</commonCommands>
   <commonCommands>CommonCommand.СменитьПароль</commonCommands>
   <commonCommands>CommonCommand.СобытияОтправки</commonCommands>
-  <commonCommands>CommonCommand.Б_ВерсияМодуляОбновить</commonCommands>
-  <commonCommands>CommonCommand.Б_ДополнительныеВозможности</commonCommands>
-  <commonCommands>CommonCommand.Б_ЗакрытьСменуККМ</commonCommands>
-  <commonCommands>CommonCommand.Б_ЗапуститьРеалТаймОбменДокументов</commonCommands>
-  <commonCommands>CommonCommand.Б_ИмпортТоваровИзИнтернетМагазина</commonCommands>
-  <commonCommands>CommonCommand.Б_НаписатьТикетВТехподдержку</commonCommands>
-  <commonCommands>CommonCommand.Б_ОткрытьСменуККМ</commonCommands>
-  <commonCommands>CommonCommand.Б_ПерейтиНаДокументацию</commonCommands>
-  <commonCommands>CommonCommand.Б_ПерейтиНаФормумИнтеграции</commonCommands>
-  <commonCommands>CommonCommand.Б_ПосмотретьВебинарыПоИнтеграцииС1С</commonCommands>
-  <commonCommands>CommonCommand.Б_ПроверитьОплатыССайта</commonCommands>
   <commonCommands>CommonCommand.СобытияПолучения</commonCommands>
   <commonCommands>CommonCommand.СозданиеНачальногоОбразаСФайлами</commonCommands>
   <commonCommands>CommonCommand.СозданиеСвязанныхОбъектов</commonCommands>
@@ -5933,6 +5933,15 @@
   <constants>Constant.АктуализироватьВзаиморасчетыПриПроведенииДокументов</constants>
   <constants>Constant.АктуализироватьВзаиморасчетыПриФормированииОтчетов</constants>
   <constants>Constant.АктуализироватьДанныеПриФормированииОтчетов</constants>
+  <constants>Constant.АЭС_ДатаВыгрузкиПлатежейВСТЕК</constants>
+  <constants>Constant.АЭС_ДатаЗачетаАванса</constants>
+  <constants>Constant.АЭС_ИмяБазы</constants>
+  <constants>Constant.АЭС_ПорцияВыгрузкиПлатежейВСТЕК</constants>
+  <constants>Constant.Б_ИспользоватьМеханизмОбменаВРеальномВремени</constants>
+  <constants>Constant.Б_ИспользоватьМеханизмПечатиЧеков</constants>
+  <constants>Constant.Б_НастройкаОбменаДокументовВРеальномВремени</constants>
+  <constants>Constant.Б_НомерВерсииМодуляОбменаССайтом</constants>
+  <constants>Constant.Б_ОбщиеНастройки</constants>
   <constants>Constant.БазоваяВерсия</constants>
   <constants>Constant.БлокировкаОтправкиБыстрыхСообщений</constants>
   <constants>Constant.ВалютаРегламентированногоУчета</constants>
@@ -6430,7 +6439,6 @@
   <constants>Constant.НеИспользоватьРозничныеПродажи</constants>
   <constants>Constant.НеИспользоватьСчетаНаОплатуВыбиратьВариантВыводаСкидок</constants>
   <constants>Constant.НеИспользоватьСчетаНаОплатуНеВыбиратьВариантВыводаСкидок</constants>
-  <constants>Constant.АЭС_ИмяБазы</constants>
   <constants>Constant.НеИспользоватьЦеновыеГруппы</constants>
   <constants>Constant.НеНоваяАрхитектураВзаиморасчетов</constants>
   <constants>Constant.НеПечататьФискальныйЧекПриОтправкеЭлектронногоЧекаПокупателю</constants>
@@ -6459,8 +6467,6 @@
   <constants>Constant.ОтложенноеОбновлениеВГлавномУзлеЗавершеноУспешно</constants>
   <constants>Constant.ОтложенноеОбновлениеЗавершеноУспешно</constants>
   <constants>Constant.ОтображатьВнеоборотныеАктивы2_2</constants>
-  <constants>Constant.АЭС_ДатаВыгрузкиПлатежейВСТЕК</constants>
-  <constants>Constant.АЭС_ПорцияВыгрузкиПлатежейВСТЕК</constants>
   <constants>Constant.ОтображениеСкидокВПечатныхФормахДокументовПродажи</constants>
   <constants>Constant.ОтправкаЭлектронныхЧековПослеПробитияЧека</constants>
   <constants>Constant.ОтправлятьВходящиеДокументыНаУтверждение</constants>
@@ -6516,11 +6522,6 @@
   <constants>Constant.ПрефиксШтучногоШтрихкода</constants>
   <constants>Constant.ПриоритетОбновленияВОбластяхДанных</constants>
   <constants>Constant.ПровайдерSMS</constants>
-  <constants>Constant.Б_ИспользоватьМеханизмОбменаВРеальномВремени</constants>
-  <constants>Constant.Б_ИспользоватьМеханизмПечатиЧеков</constants>
-  <constants>Constant.Б_НастройкаОбменаДокументовВРеальномВремени</constants>
-  <constants>Constant.Б_НомерВерсииМодуляОбменаССайтом</constants>
-  <constants>Constant.Б_ОбщиеНастройки</constants>
   <constants>Constant.ПроверятьЗаполнениеНомеровГТДПриЗакупкеУПоставщикаПоСхемеТоварыВПути</constants>
   <constants>Constant.ПроверятьИспользованиеУдаляемыхОбъектов</constants>
   <constants>Constant.ПроверятьЭлектронныеПодписиНаСервере</constants>
@@ -6550,7 +6551,6 @@
   <constants>Constant.СведенияОБлокируемыхОбъектах</constants>
   <constants>Constant.СведенияОбОбновленииИБ</constants>
   <constants>Constant.СвойстваБИП</constants>
-  <constants>Constant.АЭС_ДатаЗачетаАванса</constants>
   <constants>Constant.СинхронизироватьДанныеСПриложениемВИнтернетеПриЗавершенииРаботыПрограммы</constants>
   <constants>Constant.СинхронизироватьДанныеСПриложениемВИнтернетеПриНачалеРаботыПрограммы</constants>
   <constants>Constant.СинхронизироватьФайлы</constants>
@@ -6615,6 +6615,7 @@
   <commonForms>CommonForm.АвтономнаяРаботаВМоделиСервиса</commonForms>
   <commonForms>CommonForm.АдреснаяКнига</commonForms>
   <commonForms>CommonForm.АутентификацияВСервисе</commonForms>
+  <commonForms>CommonForm.АЭС_ФормаКонстант</commonForms>
   <commonForms>CommonForm.БлокировкаРаботыСВнешнимиРесурсами</commonForms>
   <commonForms>CommonForm.ВалютыИКурсДокумента</commonForms>
   <commonForms>CommonForm.ВводВременногоПароля</commonForms>
@@ -6798,7 +6799,6 @@
   <commonForms>CommonForm.УпаковкиШтрихкодыВЕТИС</commonForms>
   <commonForms>CommonForm.УпрощеннаяНастройкаСхемыКомпоновкиДанных</commonForms>
   <commonForms>CommonForm.УстановкаВнешнейКомпонентыНевозможна</commonForms>
-  <commonForms>CommonForm.АЭС_ФормаКонстант</commonForms>
   <commonForms>CommonForm.УстановленныеИсправления</commonForms>
   <commonForms>CommonForm.УточнениеКонтактов</commonForms>
   <commonForms>CommonForm.УточнениеКоэффициентовУпаковокИСМП</commonForms>
@@ -6848,9 +6848,15 @@
   <catalogs>Catalog.АвансовыйОтчетПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.АктВыполненныхРаботПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.АктОРасхожденияхПослеОтгрузкиПрисоединенныеФайлы</catalogs>
-  <catalogs>Catalog.Б_ХарактеристикиНоменклатурыПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.АктОРасхожденияхПослеПеремещенияПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.АктОРасхожденияхПослеПриемкиПрисоединенныеФайлы</catalogs>
+  <catalogs>Catalog.АЭС_ВидОплаты</catalogs>
+  <catalogs>Catalog.АЭС_НастройкиБазДанных</catalogs>
+  <catalogs>Catalog.АЭС_ОтражениеНоменклатуры</catalogs>
+  <catalogs>Catalog.АЭС_ПунктыВыдачи</catalogs>
+  <catalogs>Catalog.АЭС_УслугиСТЕК</catalogs>
+  <catalogs>Catalog.Б_ПользовательскиеГруппыТоваров</catalogs>
+  <catalogs>Catalog.Б_ХарактеристикиНоменклатурыПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.БанковскиеСчетаКонтрагентов</catalogs>
   <catalogs>Catalog.БанковскиеСчетаОрганизаций</catalogs>
   <catalogs>Catalog.БизнесРегионы</catalogs>
@@ -7122,8 +7128,6 @@
   <catalogs>Catalog.СоглашенияСКлиентамиПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.СоглашенияСПоставщиками</catalogs>
   <catalogs>Catalog.СоглашенияСПоставщикамиПрисоединенныеФайлы</catalogs>
-  <catalogs>Catalog.АЭС_НастройкиБазДанных</catalogs>
-  <catalogs>Catalog.АЭС_ВидОплаты</catalogs>
   <catalogs>Catalog.СообщениеSMSПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.СообщениеОбменСБанкамиПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.СообщенияОбластейДанных</catalogs>
@@ -7134,8 +7138,6 @@
   <catalogs>Catalog.СпособыОбеспеченияПотребностей</catalogs>
   <catalogs>Catalog.СпособыРаспределенияПоНаправлениямДеятельности</catalogs>
   <catalogs>Catalog.СправкаОПодтверждающихДокументахПрисоединенныеФайлы</catalogs>
-  <catalogs>Catalog.АЭС_УслугиСТЕК</catalogs>
-  <catalogs>Catalog.АЭС_ОтражениеНоменклатуры</catalogs>
   <catalogs>Catalog.Справки1ЕГАИС</catalogs>
   <catalogs>Catalog.Справки2ЕГАИС</catalogs>
   <catalogs>Catalog.СправкиСПАРКРискиПрисоединенныеФайлы</catalogs>
@@ -7183,8 +7185,6 @@
   <catalogs>Catalog.УчетныеЗаписиСинхронизацииФайлов</catalogs>
   <catalogs>Catalog.УчетныеЗаписиЭлектроннойПочты</catalogs>
   <catalogs>Catalog.УчетныеПолитикиОрганизаций</catalogs>
-  <catalogs>Catalog.АЭС_ПунктыВыдачи</catalogs>
-  <catalogs>Catalog.Б_ПользовательскиеГруппыТоваров</catalogs>
   <catalogs>Catalog.Файлы</catalogs>
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.ФизическиеЛицаПрисоединенныеФайлы</catalogs>
@@ -7214,6 +7214,9 @@
   <documents>Document.АктСписанияЕГАИС</documents>
   <documents>Document.Анкета</documents>
   <documents>Document.АннулированиеПодарочныхСертификатов</documents>
+  <documents>Document.АЭС_МатрицаСкладовПоПриоритетам</documents>
+  <documents>Document.АЭС_Платежи</documents>
+  <documents>Document.АЭС_ТоварныеПредложения</documents>
   <documents>Document.БлокировкаВычетаНДС</documents>
   <documents>Document.ВводОстатков</documents>
   <documents>Document.ВзаимозачетЗадолженности</documents>
@@ -7366,7 +7369,6 @@
   <documents>Document.СчетНаОплатуКлиенту</documents>
   <documents>Document.СчетФактураВыданный</documents>
   <documents>Document.СчетФактураВыданныйАванс</documents>
-  <documents>Document.АЭС_Платежи</documents>
   <documents>Document.СчетФактураКомиссионеру</documents>
   <documents>Document.СчетФактураКомитента</documents>
   <documents>Document.СчетФактураНалоговыйАгент</documents>
@@ -7381,12 +7383,10 @@
   <documents>Document.ТТНВходящаяЕГАИС</documents>
   <documents>Document.ТТНИсходящаяЕГАИС</documents>
   <documents>Document.УведомлениеОбИмпортеМаркированныхТоваровГИСМ</documents>
-  <documents>Document.АЭС_ТоварныеПредложения</documents>
   <documents>Document.УведомлениеОбОстаткахПрослеживаемыхТоваров</documents>
   <documents>Document.УведомлениеОбОтгрузкеМаркированныхТоваровГИСМ</documents>
   <documents>Document.УведомлениеОВвозеМаркированныхТоваровИзЕАЭСГИСМ</documents>
   <documents>Document.УведомлениеОВвозеПрослеживаемыхТоваров</documents>
-  <documents>Document.АЭС_МатрицаСкладовПоПриоритетам</documents>
   <documents>Document.УведомлениеОЗачисленииВалюты</documents>
   <documents>Document.УведомлениеОПеремещенииПрослеживаемыхТоваров</documents>
   <documents>Document.УведомлениеОПоступленииМаркированныхТоваровГИСМ</documents>
@@ -7411,6 +7411,7 @@
   <documentNumerators>DocumentNumerator.ДокументыРеализацииТоваров</documentNumerators>
   <documentNumerators>DocumentNumerator.ОтчетыКомиссионеров</documentNumerators>
   <documentNumerators>DocumentNumerator.СчетаФактурыВыданные</documentNumerators>
+  <documentJournals>DocumentJournal.АЭС_ПлатежиЗаСмену</documentJournals>
   <documentJournals>DocumentJournal.Взаимодействия</documentJournals>
   <documentJournals>DocumentJournal.ДокументыЕГАИС</documentJournals>
   <documentJournals>DocumentJournal.КорректировкиНДС</documentJournals>
@@ -7422,11 +7423,13 @@
   <documentJournals>DocumentJournal.СкладскиеОрдера</documentJournals>
   <documentJournals>DocumentJournal.СкладскиеОрдераНаИзлишкиНедостачиПорчи</documentJournals>
   <documentJournals>DocumentJournal.СогласияНаОбработкуПерсональныхДанных</documentJournals>
-  <documentJournals>DocumentJournal.АЭС_ПлатежиЗаСмену</documentJournals>
   <documentJournals>DocumentJournal.ЧекиККМ</documentJournals>
   <enums>Enum.ABCКлассификация</enums>
   <enums>Enum.XYZКлассификация</enums>
   <enums>Enum.АналитикаКурсовыхРазниц</enums>
+  <enums>Enum.АЭС_ВидМатрицыРезервирования</enums>
+  <enums>Enum.АЭС_ВидТорговогоПредложения</enums>
+  <enums>Enum.АЭС_СпособоРасчетаКомиссии</enums>
   <enums>Enum.ВариантЛогинаПароляДляЛентыНовостей</enums>
   <enums>Enum.ВариантыАнализаНоменклатурыПродаваемойСовместно</enums>
   <enums>Enum.ВариантыВажностиВзаимодействия</enums>
@@ -7975,7 +7978,6 @@
   <enums>Enum.ТипыДоговоров</enums>
   <enums>Enum.ТипыДоговоровМеждуОрганизациями</enums>
   <enums>Enum.ТипыДокументовEDI</enums>
-  <enums>Enum.АЭС_ВидТорговогоПредложения</enums>
   <enums>Enum.ТипыДокументовВЕТИС</enums>
   <enums>Enum.ТипыДокументовМОТП</enums>
   <enums>Enum.ТипыЗадолженности</enums>
@@ -7983,7 +7985,6 @@
   <enums>Enum.ТипыЗаписейПартий</enums>
   <enums>Enum.ТипыЗапросовИС</enums>
   <enums>Enum.ТипыЗарубежныхПредприятий</enums>
-  <enums>Enum.АЭС_ВидМатрицыРезервирования</enums>
   <enums>Enum.ТипыЗаявокОператоруМОТП</enums>
   <enums>Enum.ТипыЗначенийКатегорийНовостей</enums>
   <enums>Enum.ТипыИдентификаторовТовараККТ</enums>
@@ -8012,7 +8013,6 @@
   <enums>Enum.ТипыОперацийВводаОстатков</enums>
   <enums>Enum.ТипыОперацийВозвратаЧерезЯндексКассу</enums>
   <enums>Enum.ТипыОперацийДвиженияКодовМаркировкиМОТП</enums>
-  <enums>Enum.АЭС_СпособоРасчетаКомиссии</enums>
   <enums>Enum.ТипыОплатыККТ</enums>
   <enums>Enum.ТипыОрганизацийЕГАИС</enums>
   <enums>Enum.ТипыОснованияАктаОРасхождении</enums>
@@ -8152,6 +8152,10 @@
   <reports>Report.АнализЦенПоставщиков</reports>
   <reports>Report.АнализЭффективностиРаботыТорговыхПредставителей</reports>
   <reports>Report.АналитическийОтчетПоАнкетированию</reports>
+  <reports>Report.АЭС_АналогZОтчета</reports>
+  <reports>Report.АЭС_ОтчетКассира</reports>
+  <reports>Report.АЭС_РеестрПлатежей</reports>
+  <reports>Report.АЭС_РеестрСводныхПКО</reports>
   <reports>Report.БизнесПроцессы</reports>
   <reports>Report.БонусныеБаллы</reports>
   <reports>Report.ВаловаяПрибыльПоОплаченнымОтгрузкам</reports>
@@ -8308,12 +8312,9 @@
   <reports>Report.РеестрКредитовИДепозитов</reports>
   <reports>Report.РеестрНормативноСправочнойИнформации</reports>
   <reports>Report.РеестрПлатежей</reports>
+  <reports>Report.РеестрПлатежей_ИнтернетМагазин</reports>
   <reports>Report.РеестрСчетовФактурДляСверки</reports>
   <reports>Report.РеестрТорговыхДокументов</reports>
-  <reports>Report.АЭС_РеестрПлатежей</reports>
-  <reports>Report.АЭС_РеестрСводныхПКО</reports>
-  <reports>Report.АЭС_АналогZОтчета</reports>
-  <reports>Report.АЭС_ОтчетКассира</reports>
   <reports>Report.РеестрУчетныхДанных</reports>
   <reports>Report.РезультатыСогласованияЗакупки</reports>
   <reports>Report.РезультатыСогласованияЗаявкиНаВозвратТоваровОтКлиента</reports>
@@ -8350,7 +8351,6 @@
   <reports>Report.ТекущиеКвотыАссортимента</reports>
   <reports>Report.ТоварныйКалендарь</reports>
   <reports>Report.ТоварныйОтчетТОРГ29</reports>
-  <reports>Report.РеестрПлатежей_ИнтернетМагазин</reports>
   <reports>Report.ТоварыВЯчейках</reports>
   <reports>Report.ТоварыКОтбору</reports>
   <reports>Report.ТоварыКОтгрузке</reports>
@@ -8369,16 +8369,26 @@
   <reports>Report.УсловияПродаж</reports>
   <reports>Report.ФинансовоеСостояние</reports>
   <reports>Report.ЭффективностьСделокСКлиентами</reports>
-  <dataProcessors>DataProcessor.ЗагрузкаИСУ_УТ11</dataProcessors>
-  <dataProcessors>DataProcessor.ВнешняяОбработка1</dataProcessors>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>
   <dataProcessors>DataProcessor.АктивныеЗаказыСУЗ</dataProcessors>
   <dataProcessors>DataProcessor.АктивныеПользователи</dataProcessors>
   <dataProcessors>DataProcessor.АрхивированиеУдалениеЧековККМ</dataProcessors>
+  <dataProcessors>DataProcessor.АЭС_ВыгрузкаПКО</dataProcessors>
+  <dataProcessors>DataProcessor.АЭС_ВыгрузкаРеестраПлатежей</dataProcessors>
+  <dataProcessors>DataProcessor.АЭС_ЗагрузкаКонтрагентов</dataProcessors>
+  <dataProcessors>DataProcessor.АЭС_ЗагрузкаОбновлениеНомеровУслугИзСТЕК</dataProcessors>
+  <dataProcessors>DataProcessor.АЭС_ЗачетАванса</dataProcessors>
+  <dataProcessors>DataProcessor.АЭС_ОбработкаОбращенийКоллЦентра</dataProcessors>
+  <dataProcessors>DataProcessor.АЭС_ОбработкаОчередиЧековККМвСТЭК</dataProcessors>
+  <dataProcessors>DataProcessor.АЭС_ПанельАдминистрированияРМК</dataProcessors>
+  <dataProcessors>DataProcessor.АЭС_РабочееМестоКассира</dataProcessors>
+  <dataProcessors>DataProcessor.АЭС_ФормированиеСводныхПКО</dataProcessors>
+  <dataProcessors>DataProcessor.Б_ПомощникИмпортаТоваровБитрикс</dataProcessors>
   <dataProcessors>DataProcessor.БизнесСеть</dataProcessors>
   <dataProcessors>DataProcessor.БлокировкаРаботыПользователей</dataProcessors>
   <dataProcessors>DataProcessor.ВводКонтактнойИнформации</dataProcessors>
   <dataProcessors>DataProcessor.ВиртуальнаяАгрегацияУпаковокИСМП</dataProcessors>
+  <dataProcessors>DataProcessor.ВнешняяОбработка1</dataProcessors>
   <dataProcessors>DataProcessor.ВходящиеСообщенияУТМЕГАИС</dataProcessors>
   <dataProcessors>DataProcessor.ВыгрузкаБазыТоваровВТСД</dataProcessors>
   <dataProcessors>DataProcessor.ВыгрузкаЗагрузкаEnterpriseData</dataProcessors>
@@ -8417,6 +8427,7 @@
   <dataProcessors>DataProcessor.ЖурналСкладскихАктов</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДанныхИзВнешнихФайлов</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДанныхИзФайла</dataProcessors>
+  <dataProcessors>DataProcessor.ЗагрузкаИСУ_УТ11</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаКлассификатораБанков</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаКурсовВалют</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаОтчетаБанкаПоЭквайрингу</dataProcessors>
@@ -8538,7 +8549,6 @@
   <dataProcessors>DataProcessor.ПомощникЗакрытияЗаказов</dataProcessors>
   <dataProcessors>DataProcessor.ПомощникЗаменыСтавкиНДС</dataProcessors>
   <dataProcessors>DataProcessor.ПомощникЗачетаОплат</dataProcessors>
-  <dataProcessors>DataProcessor.АЭС_ОбработкаОчередиЧековККМвСТЭК</dataProcessors>
   <dataProcessors>DataProcessor.ПомощникИнтерактивногоОбменаДанными</dataProcessors>
   <dataProcessors>DataProcessor.ПомощникИнтерактивногоОбменаДаннымиВМоделиСервиса</dataProcessors>
   <dataProcessors>DataProcessor.ПомощникИсправленияОстатковТоваровОрганизаций</dataProcessors>
@@ -8550,14 +8560,6 @@
   <dataProcessors>DataProcessor.ПомощникОформленияСкладскихАктов</dataProcessors>
   <dataProcessors>DataProcessor.ПомощникПереходаСДругихКонфигураций</dataProcessors>
   <dataProcessors>DataProcessor.ПомощникПереходаСТорговляИСклад77</dataProcessors>
-  <dataProcessors>DataProcessor.АЭС_РабочееМестоКассира</dataProcessors>
-  <dataProcessors>DataProcessor.АЭС_ФормированиеСводныхПКО</dataProcessors>
-  <dataProcessors>DataProcessor.АЭС_ЗагрузкаОбновлениеНомеровУслугИзСТЕК</dataProcessors>
-  <dataProcessors>DataProcessor.АЭС_ПанельАдминистрированияРМК</dataProcessors>
-  <dataProcessors>DataProcessor.АЭС_ВыгрузкаПКО</dataProcessors>
-  <dataProcessors>DataProcessor.АЭС_ВыгрузкаРеестраПлатежей</dataProcessors>
-  <dataProcessors>DataProcessor.АЭС_ЗагрузкаКонтрагентов</dataProcessors>
-  <dataProcessors>DataProcessor.АЭС_ОбработкаОбращенийКоллЦентра</dataProcessors>
   <dataProcessors>DataProcessor.ПомощникПереходаСУправлениеТорговлей103</dataProcessors>
   <dataProcessors>DataProcessor.ПомощникПоУчетуНДС</dataProcessors>
   <dataProcessors>DataProcessor.ПомощникПродаж</dataProcessors>
@@ -8591,7 +8593,6 @@
   <dataProcessors>DataProcessor.РезервноеКопированиеИБ</dataProcessors>
   <dataProcessors>DataProcessor.РезультатыОбновленияПрограммы</dataProcessors>
   <dataProcessors>DataProcessor.РезультатыСверкиКодовМаркировкиТОРГ2</dataProcessors>
-  <dataProcessors>DataProcessor.Б_ПомощникИмпортаТоваровБитрикс</dataProcessors>
   <dataProcessors>DataProcessor.РекомендацияПоПовышениюСкоростиРаботы</dataProcessors>
   <dataProcessors>DataProcessor.СамообслуживаниеПартнеров</dataProcessors>
   <dataProcessors>DataProcessor.СверткаИнформационнойБазы</dataProcessors>
@@ -8611,7 +8612,6 @@
   <dataProcessors>DataProcessor.ТестированиеОперацийЗакрытийМесяца</dataProcessors>
   <dataProcessors>DataProcessor.ТорговыеПредложения</dataProcessors>
   <dataProcessors>DataProcessor.ТранспортСообщенийОбменаEMAIL</dataProcessors>
-  <dataProcessors>DataProcessor.АЭС_ЗачетАванса</dataProcessors>
   <dataProcessors>DataProcessor.ТранспортСообщенийОбменаFILE</dataProcessors>
   <dataProcessors>DataProcessor.ТранспортСообщенийОбменаFTP</dataProcessors>
   <dataProcessors>DataProcessor.ТранспортСообщенийОбменаВнешняяСистема</dataProcessors>
@@ -8635,8 +8635,6 @@
   <dataProcessors>DataProcessor.ФормированиеПередачТоваровМеждуОрганизациямиИВыкупов</dataProcessors>
   <dataProcessors>DataProcessor.ЭлектронноеВзаимодействие</dataProcessors>
   <informationRegisters>InformationRegister.ABCXYZКлассификацияКлиентов</informationRegisters>
-  <informationRegisters>InformationRegister.Б_ИнформацияОНастройкахОбменаССайтом</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_ТорговыеПредложения</informationRegisters>
   <informationRegisters>InformationRegister.ABCXYZКлассификацияНоменклатуры</informationRegisters>
   <informationRegisters>InformationRegister.АбонентыЭДО</informationRegisters>
   <informationRegisters>InformationRegister.АдресаЗонОтветственностиВЕТИС</informationRegisters>
@@ -8649,6 +8647,32 @@
   <informationRegisters>InformationRegister.АналитикаУчетаПартий</informationRegisters>
   <informationRegisters>InformationRegister.АналитикаУчетаПоПартнерам</informationRegisters>
   <informationRegisters>InformationRegister.Ассортимент</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_АктуальныеПриоритеты</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_ДанныеКонтрагентов</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_ДополнительныеНастройкиИМ</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_ИсполнителиПостащикиСтек</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_КомиссияНоменклатуры</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_КонсигнантыПринципалыНоменклатуры</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_НастройкаВыгрузкиПлатежей</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_НастройкиПлатежей</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_НоменклатураПоВидамОплат</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_ОстаткиТоваровКонтрагента</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_ОтветственныеЛицаОрганизации</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_ОчередьОтправкиПлатежейВСТЕК</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_ПриоритетыСкладов</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_ПроцентКомиссиБанка</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_СообщенияАдминистратору</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_СоответствиеГруппНоменклатурыПоставщиков</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_СписокАнкет</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_СписокЭкстремистов</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_ТорговыеПредложения</informationRegisters>
+  <informationRegisters>InformationRegister.АЭС_ШтрихКоды</informationRegisters>
+  <informationRegisters>InformationRegister.Б_ИнформацияОНастройкахОбменаССайтом</informationRegisters>
+  <informationRegisters>InformationRegister.Б_ИнформацияООтправленныхТикетах</informationRegisters>
+  <informationRegisters>InformationRegister.Б_ОчередьПечати</informationRegisters>
+  <informationRegisters>InformationRegister.Б_ПакетныйОбмен</informationRegisters>
+  <informationRegisters>InformationRegister.Б_ПрисоединенныеФайлыХарактеристикНоменклатуры</informationRegisters>
+  <informationRegisters>InformationRegister.Б_СвойстваТоваровДокументов</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанных</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанныхОбластейДанных</informationRegisters>
   <informationRegisters>InformationRegister.БлокировкиСеансовОбластейДанных</informationRegisters>
@@ -8798,7 +8822,6 @@
   <informationRegisters>InformationRegister.КэшДанныхКлассификаторов</informationRegisters>
   <informationRegisters>InformationRegister.КэшДанныхПартионногоУчета</informationRegisters>
   <informationRegisters>InformationRegister.КэшОписанияОстатковИСМП</informationRegisters>
-  <informationRegisters>InformationRegister.Б_ИнформацияООтправленныхТикетах</informationRegisters>
   <informationRegisters>InformationRegister.КэшПрограммныхИнтерфейсов</informationRegisters>
   <informationRegisters>InformationRegister.КэшСостоянийКонтрагентовФНС</informationRegisters>
   <informationRegisters>InformationRegister.КэшТестовыхПериодов</informationRegisters>
@@ -8932,9 +8955,6 @@
   <informationRegisters>InformationRegister.ПользовательскиеНастройкиДоступаКОбработкам</informationRegisters>
   <informationRegisters>InformationRegister.ПорядокПлатежногоКалендаря</informationRegisters>
   <informationRegisters>InformationRegister.ПоследнийОбменСБанками</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_НоменклатураПоВидамОплат</informationRegisters>
-  <informationRegisters>InformationRegister.Б_ОчередьПечати</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_ОчередьОтправкиПлатежейВСТЕК</informationRegisters>
   <informationRegisters>InformationRegister.ПоставляемыеДанныеТребующиеОбработки</informationRegisters>
   <informationRegisters>InformationRegister.ПоставляемыеДанныеТребующиеОбработкиВОбластях</informationRegisters>
   <informationRegisters>InformationRegister.ПоставляемыеМакетыПечати</informationRegisters>
@@ -8954,15 +8974,6 @@
   <informationRegisters>InformationRegister.ПримененияЕНВД</informationRegisters>
   <informationRegisters>InformationRegister.ПричиныИзмененияАдресныхСведений</informationRegisters>
   <informationRegisters>InformationRegister.ПроблемыСостоянияСистемы</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_НастройкиПлатежей</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_СообщенияАдминистратору</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_ШтрихКоды</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_КонсигнантыПринципалыНоменклатуры</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_НастройкаВыгрузкиПлатежей</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_КомиссияНоменклатуры</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_ДанныеКонтрагентов</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_ПроцентКомиссиБанка</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_ОтветственныеЛицаОрганизации</informationRegisters>
   <informationRegisters>InformationRegister.ПрогнозыРасходаУпаковок</informationRegisters>
   <informationRegisters>InformationRegister.ПросмотренныеДанныеИнформационногоЦентра</informationRegisters>
   <informationRegisters>InformationRegister.ПростыеЭлектронныеПодписи</informationRegisters>
@@ -9016,19 +9027,13 @@
   <informationRegisters>InformationRegister.СинхронизацияКлассификаторовВЕТИС</informationRegisters>
   <informationRegisters>InformationRegister.СинхронизацияОбъектовВЕТИС</informationRegisters>
   <informationRegisters>InformationRegister.СклоненияПредставленийОбъектов</informationRegisters>
-  <informationRegisters>InformationRegister.Б_ПакетныйОбмен</informationRegisters>
   <informationRegisters>InformationRegister.СловарьСопоставленияНоменклатурыБЭД</informationRegisters>
-  <informationRegisters>InformationRegister.Б_ПрисоединенныеФайлыХарактеристикНоменклатуры</informationRegisters>
   <informationRegisters>InformationRegister.СлужебныеАдресныеСведения</informationRegisters>
   <informationRegisters>InformationRegister.СобытияМониторингаСПАРКРиски</informationRegisters>
   <informationRegisters>InformationRegister.СовместимостьОператоровЭДО</informationRegisters>
-  <informationRegisters>InformationRegister.Б_СвойстваТоваровДокументов</informationRegisters>
   <informationRegisters>InformationRegister.СогласиеОПредоставленииИнформацииГИСМТ</informationRegisters>
   <informationRegisters>InformationRegister.СогласияНаОбработкуПерсональныхДанных</informationRegisters>
   <informationRegisters>InformationRegister.СообщенияОбменаДанными</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_СписокЭкстремистов</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_СписокАнкет</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_ИсполнителиПостащикиСтек</informationRegisters>
   <informationRegisters>InformationRegister.СообщенияОбменаДаннымиОбластейДанных</informationRegisters>
   <informationRegisters>InformationRegister.СоответствиеВидовНоменклатурыРаботаСНоменклатурой</informationRegisters>
   <informationRegisters>InformationRegister.СоответствиеЗначенийРеквизитовРаботаСНоменклатурой</informationRegisters>
@@ -9051,9 +9056,6 @@
   <informationRegisters>InformationRegister.СостоянияЗапросовКоммерческихПредложений</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияИнтеграцииОбъектов</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияИРеквизитыДоставки</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_ДополнительныеНастройкиИМ</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_ПриоритетыСкладов</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_АктуальныеПриоритеты</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияКоммерческихПредложенийКлиентам</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияКонтактовВзаимодействий</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияКонтрагентов</informationRegisters>
@@ -9071,8 +9073,6 @@
   <informationRegisters>InformationRegister.СостоянияРассылокОтчетов</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияСинхронизацииСервисНастроекЭДО</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияСинхронизацииТорговыеПредложения</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_СоответствиеГруппНоменклатурыПоставщиков</informationRegisters>
-  <informationRegisters>InformationRegister.АЭС_ОстаткиТоваровКонтрагента</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияСогласованияВДокументообороте</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияУспешныхОбменовДанными</informationRegisters>
   <informationRegisters>InformationRegister.СостоянияУспешныхОбменовДаннымиОбластейДанных</informationRegisters>
@@ -9147,6 +9147,8 @@
   <informationRegisters>InformationRegister.ЦеныНоменклатурыПоставщиков</informationRegisters>
   <informationRegisters>InformationRegister.ШтрихкодыНоменклатуры</informationRegisters>
   <informationRegisters>InformationRegister.ЭлектронныеПодписи</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.АЭС_РеестрПлатежей</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.АЭС_СписокПлатежей_ФМ</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.БонусныеБаллы</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ВыручкаИСебестоимостьПродаж</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ГрафикОтгрузкиТоваров</accumulationRegisters>
@@ -9226,12 +9228,10 @@
   <accumulationRegisters>AccumulationRegister.ТоварыВЯчейках</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ТоварыКОтбору</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ТоварыКОтгрузке</accumulationRegisters>
-  <accumulationRegisters>AccumulationRegister.АЭС_РеестрПлатежей</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ТоварыКОформлениюДокументовИмпорта</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ТоварыКОформлениюЗаявленийОВвозе</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ТоварыКОформлениюИзлишковНедостач</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ТоварыКОформлениюОтчетовКомитенту</accumulationRegisters>
-  <accumulationRegisters>AccumulationRegister.АЭС_СписокПлатежей_ФМ</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ТоварыКПоступлению</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ТоварыНаСкладах</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ТоварыОрганизаций</accumulationRegisters>

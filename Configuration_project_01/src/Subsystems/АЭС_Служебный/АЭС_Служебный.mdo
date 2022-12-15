@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f045d8e5-d74d-41a6-9d17-a671fa52563f">
+  <name>АЭС_Служебный</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС служебный</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.АЭС_НастройкиБазДанных</content>
+  <content>InformationRegister.АЭС_НоменклатураПоВидамОплат</content>
+  <content>Catalog.АЭС_ВидОплаты</content>
+  <content>InformationRegister.АЭС_ОчередьОтправкиПлатежейВСТЕК</content>
+  <content>DataProcessor.АЭС_ОбработкаОчередиЧековККМвСТЭК</content>
+  <content>Constant.АЭС_ИмяБазы</content>
+  <content>DataProcessor.АЭС_РабочееМестоКассира</content>
+  <content>DataProcessor.АЭС_ФормированиеСводныхПКО</content>
+  <content>Document.АЭС_Платежи</content>
+  <content>Catalog.Контрагенты</content>
+  <content>Report.АЭС_РеестрСводныхПКО</content>
+  <content>Document.КассоваяСмена</content>
+  <content>Catalog.КассыККМ</content>
+  <content>Catalog.Кассы</content>
+  <content>Catalog.Номенклатура</content>
+  <content>Catalog.Партнеры</content>
+  <content>Catalog.АЭС_УслугиСТЕК</content>
+  <content>Document.ВыемкаДенежныхСредствИзКассыККМ</content>
+  <content>CommonForm.АЭС_ФормаКонстант</content>
+  <content>Constant.АЭС_ДатаВыгрузкиПлатежейВСТЕК</content>
+  <content>DataProcessor.АЭС_ВыгрузкаПКО</content>
+  <content>Report.АЭС_ОтчетКассира</content>
+  <content>Constant.АЭС_ПорцияВыгрузкиПлатежейВСТЕК</content>
+  <content>DataProcessor.АЭС_ВыгрузкаРеестраПлатежей</content>
+  <content>DocumentJournal.ЧекиККМ</content>
+  <content>InformationRegister.АЭС_НастройкиПлатежей</content>
+  <content>Report.РеестрПлатежей_ИнтернетМагазин</content>
+  <content>InformationRegister.АЭС_КомиссияНоменклатуры</content>
+</mdclass:Subsystem>

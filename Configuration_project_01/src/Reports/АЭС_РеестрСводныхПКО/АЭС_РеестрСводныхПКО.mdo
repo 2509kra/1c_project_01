@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e9994ce-f350-4ca9-b2c6-36ce95a50e6c">
+  <producedTypes>
+    <objectType typeId="7e9440bd-42b9-42fe-8bc3-f554854846a7" valueTypeId="4011e625-2e4e-4e5b-9827-ecfb475b6a48"/>
+    <managerType typeId="89933dbd-efdb-4db8-b4c0-b9b4617c3d4a" valueTypeId="9791b9c4-9df3-4013-934f-fd81c9d0188d"/>
+  </producedTypes>
+  <name>АЭС_РеестрСводныхПКО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реестр сводных ПКО (АЭС)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.АЭС_РеестрСводныхПКО.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="9f668428-bc07-42a3-93dd-96648e52f3e0">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="386af408-939f-442a-b001-b2b5f4fbeba4">
+  <producedTypes>
+    <refType typeId="812e3ea7-8d6d-43a3-a8a0-ce85393bc546" valueTypeId="1803c502-a1e7-4a5a-9b1c-1b125115a6fa"/>
+    <listType typeId="929aefce-9003-4975-8773-6235cda6d6f4" valueTypeId="c509e1dd-bb48-4054-acb0-d1201649a8d3"/>
+    <managerType typeId="c7d0085a-bb66-4b9f-bf90-fade9e3feccb" valueTypeId="34f518bf-f3a0-4175-ad31-2a738b96a18d"/>
+  </producedTypes>
+  <name>АЭС_СпособоРасчетаКомиссии</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС способо расчета комиссии</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="12e15816-cbbc-438b-9b2a-661c40b671b5">
+    <name>ФиксированнаяСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фиксированная сумма</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c98cbaba-1408-4968-ab54-fd0975e7762c">
+    <name>ПроцентОтСуммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент от суммы</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

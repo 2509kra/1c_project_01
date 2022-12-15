@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="14fbf44a-5d67-41b9-b0ac-86a9e92a416f">
+  <producedTypes>
+    <objectType typeId="582936f1-c55f-4d5f-9f22-92199d278017" valueTypeId="14c214b6-8fa1-45b3-9f50-ada80ea1be36"/>
+    <managerType typeId="96b41a90-8fab-4a7f-b102-b20c5f665335" valueTypeId="834c8f33-6d1c-4966-b460-778ae21d3ca4"/>
+  </producedTypes>
+  <name>АЭС_ЗачетАванса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зачет аванса (АЭС)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.АЭС_ЗачетАванса.Form.Форма</defaultForm>
+  <tabularSections uuid="320b1a29-2fcc-49ac-978b-351c5a136f66">
+    <producedTypes>
+      <objectType typeId="0df6e23b-dcb2-44ef-8431-032c83691b17" valueTypeId="67a5acba-87c3-4f97-b40b-229a32254d33"/>
+      <rowType typeId="af0d1427-fc80-4cf7-a140-4f2bb1d9a4c9" valueTypeId="3c0a8ea2-b217-45fa-826f-374ffdd8b73a"/>
+    </producedTypes>
+    <name>Данные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="65a5b870-2b34-46aa-9f97-09d89614e8d3">
+      <name>Документ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.СписаниеБезналичныхДенежныхСредств</types>
+        <types>DocumentRef.РеализацияУслугПрочихАктивов</types>
+        <types>DocumentRef.РеализацияТоваровУслуг</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8c73ec1c-be08-4dca-8b0a-785e78ad43b0">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="1e91abe6-341d-4421-acc3-49a88f1b85ab">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

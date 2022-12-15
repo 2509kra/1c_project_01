@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="67763ca9-9c99-453c-82ff-cf8b5638712a">
+  <producedTypes>
+    <managerType typeId="c3c1770b-7465-4fb7-b588-7de27b5dbe4d" valueTypeId="f9a3b228-826f-44ec-ab7b-109b01af6318"/>
+    <valueManagerType typeId="22c789ff-2d6e-4dbf-9e57-9130d8678f4e" valueTypeId="b49960ad-2a55-4b4b-92b5-72402347d128"/>
+    <valueKeyType typeId="c5aafd28-4259-4576-a95b-8615f67531cc" valueTypeId="75791e3c-5b1d-4ce7-8a76-ecfe380e2e38"/>
+  </producedTypes>
+  <name>АЭС_ДатаЗачетаАванса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата зачета аванса</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

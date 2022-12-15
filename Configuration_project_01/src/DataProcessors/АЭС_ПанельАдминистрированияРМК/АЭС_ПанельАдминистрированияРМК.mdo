@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cd5b970b-7ebe-4ddb-ba67-7e1b6300378e">
+  <producedTypes>
+    <objectType typeId="7b70cf91-7199-4905-abc0-42f209ca75d7" valueTypeId="8f44e717-ac05-4212-9df9-b2d07920a3b3"/>
+    <managerType typeId="3c603018-ad03-4e68-a491-f2174e54856f" valueTypeId="cede8eba-c466-412e-a8db-aaaf37f8ab2c"/>
+  </producedTypes>
+  <name>АЭС_ПанельАдминистрированияРМК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Панель администрирования РМК (АЭС)</value>
+  </synonym>
+  <defaultForm>DataProcessor.АЭС_ПанельАдминистрированияРМК.Form.НастройкиРМКИОборудования</defaultForm>
+  <forms uuid="a20b06ef-682e-4757-a4e8-26682a8d482e">
+    <name>НастройкиРМКИОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>РМК и оборудование</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="3b710fe6-52a9-4d79-acbf-9480e22c37d4">
+    <name>Планирование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Планирование</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="17f38abd-d5ec-4a5d-b7e1-7bac1a3e804e">
+    <name>Закупки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закупки</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="894785d0-fddb-4c39-b415-62ca14a555cc">
+    <name>ЗакупкиБазовая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закупки</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="6aa660f6-306d-4285-a0ca-fafa2a130d9e">
+    <name>Казначейство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Казначейство</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="557ad6cb-1ddf-4978-8b40-6ff8389a659c">
+    <name>CRMИМаркетинг</name>
+    <synonym>
+      <key>ru</key>
+      <value>CRM и маркетинг</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="a62a810d-cd1e-4e65-9c18-de6825fff1aa">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <group>CommandGroup.НачальноеЗаполнение</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="baaa367f-00aa-4a6f-96a9-d0280fdd5a2a">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="f281d966-131e-4c88-9693-66f63797e21b">
+    <name>Предприятие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предприятие</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="fcd91bf1-adfe-4474-b7fe-983f0c4e6f09">
+    <name>Продажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажи</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="af1b4a04-441a-43ca-9ff1-2a942146ae16">
+    <name>РМКИОборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>РМК и оборудование</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="b5e77896-0f56-4d16-b456-64a25ac43acb">
+    <name>СкладИДоставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад и доставка</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="a8105d87-b235-4854-b47b-eb69f4e90af6">
+    <name>ФинансовыйРезультатИКонтроллинг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Финансовый результат и контроллинг</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="a4949788-1469-4f55-8c54-387aadb4ab0d">
+    <name>Интерфейс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интерфейс</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="26ee9674-389e-4048-93c3-97726e60ae4c">
+    <name>ОбновлениеДоКА</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновление до 1С:Комплексная автоматизация 2.0</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="176b3f9d-2dd7-4905-a945-59a3049a779d">
+    <name>ОбновлениеДоERP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновление до 1С:ERP Управление предприятием 2</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="165e433d-d4fe-4b83-bffd-b35c3406247b">
+    <name>ВыгрузитьДанныеДляПереходаВСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переход в сервис</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="7ecc400e-b09a-4b6b-9498-9e3dd8b59e83">
+    <name>ОбновлениеДоУТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник перехода на 1С:Управление торговлей ред.11, Проф</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

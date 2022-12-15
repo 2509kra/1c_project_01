@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d8276b0-7a63-4230-934d-890f42b92f82">
+  <producedTypes>
+    <managerType typeId="563c8bd2-b89c-435b-a404-e596d93b96b6" valueTypeId="e013cbb0-12c4-4349-bbe7-15bb6346a2dd"/>
+    <valueManagerType typeId="4c83676b-c898-4d73-b34e-70ad906b4d3d" valueTypeId="9cf990be-7bc0-4bb4-9a32-f081295900a9"/>
+    <valueKeyType typeId="e6af7cef-5984-5ace-a09b-f056daacdf77" valueTypeId="3b33e7e2-471d-5057-adb6-e634ecbb1724"/>
+  </producedTypes>
+  <name>АЭС_ДатаВыгрузкиПлатежейВСТЕК</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС дата выгрузки платежей в СТЕК</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

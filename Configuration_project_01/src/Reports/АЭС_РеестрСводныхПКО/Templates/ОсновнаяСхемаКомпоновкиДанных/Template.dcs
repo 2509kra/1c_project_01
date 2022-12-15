@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументПродажи</dataPath>
+			<field>ДокументПродажи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сумма</dataPath>
+			<field>Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КассоваяСмена</dataPath>
+			<field>КассоваяСмена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтавкаНДС</dataPath>
+			<field>СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КассаККМ</dataPath>
+			<field>КассаККМ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Вид</dataPath>
+			<field>Вид</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидОплаты</dataPath>
+			<field>ВидОплаты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПКО</dataPath>
+			<field>ПКО</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПКО</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АдресЛС</dataPath>
+			<field>АдресЛС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес ЛС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЛС</dataPath>
+			<field>НомерЛС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер ЛС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоставщикУслуг</dataPath>
+			<field>ПоставщикУслуг</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поставщик услуг</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	"Основная деятельность" КАК Вид,
+	АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Организация КАК Организация,
+	АЭС_ПлатежиОсновнаяДеятельность.Ссылка.КассаККМ КАК КассаККМ,
+	АЭС_ПлатежиОсновнаяДеятельность.Ссылка.КассоваяСмена КАК КассоваяСмена,
+	АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Статус КАК Статус,
+	АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Контрагент КАК Контрагент,
+	АЭС_ПлатежиОсновнаяДеятельность.ДокументПродажи КАК ДокументПродажи,
+	АЭС_ПлатежиОсновнаяДеятельность.Сумма КАК Сумма,
+	АЭС_ПлатежиОсновнаяДеятельность.СтавкаНДС КАК СтавкаНДС,
+	ВЫБОР
+		КОГДА АЭС_ПлатежиОсновнаяДеятельность.СозданныйПКО = ЗНАЧЕНИЕ(Документ.ПриходныйКассовыйОрдер.ПустаяСсылка)
+			ТОГДА "Нет ПКО"
+		ИНАЧЕ АЭС_ПлатежиОсновнаяДеятельность.СозданныйПКО
+	КОНЕЦ КАК ПКО,
+	АЭС_ПлатежиОсновнаяДеятельность.ВидОплаты КАК ВидОплаты,
+	АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Контрагент.НомерЛС КАК НомерЛС,
+	АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Контрагент.АдресЛС КАК АдресЛС,
+	АЭС_ПлатежиОсновнаяДеятельность.НомерУслуги.Номенклатура КАК Номенклатура,
+	ВЫБОР
+		КОГДА АЭС_ПлатежиОсновнаяДеятельность.ПоставщикУслуг ЕСТЬ NULL
+			ТОГДА АЭС_ПлатежиОсновнаяДеятельность.ИсполнительУслуг
+		ИНАЧЕ АЭС_ПлатежиОсновнаяДеятельность.ПоставщикУслуг
+	КОНЕЦ КАК ПоставщикУслуг
+ИЗ
+	Документ.АЭС_Платежи.ОсновнаяДеятельность КАК АЭС_ПлатежиОсновнаяДеятельность
+ГДЕ
+	АЭС_ПлатежиОсновнаяДеятельность.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И АЭС_ПлатежиОсновнаяДеятельность.Ссылка.КассаККМ = &amp;КассаККМ
+	И АЭС_ПлатежиОсновнаяДеятельность.СозданныйПКО.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Товары",
+	АЭС_ПлатежиТовары.Ссылка.Организация,
+	АЭС_ПлатежиТовары.Ссылка.КассаККМ,
+	АЭС_ПлатежиТовары.Ссылка.КассоваяСмена,
+	АЭС_ПлатежиТовары.Ссылка.Статус,
+	АЭС_ПлатежиТовары.Ссылка.Контрагент,
+	АЭС_ПлатежиТовары.ДокументПродажи,
+	АЭС_ПлатежиТовары.Сумма,
+	АЭС_ПлатежиТовары.СтавкаНДС,
+	ВЫБОР
+		КОГДА АЭС_ПлатежиТовары.СозданныйПКО = ЗНАЧЕНИЕ(Документ.ПриходныйКассовыйОрдер.ПустаяСсылка)
+			ТОГДА "Нет ПКО"
+		ИНАЧЕ АЭС_ПлатежиТовары.СозданныйПКО
+	КОНЕЦ,
+	АЭС_ПлатежиТовары.ВидОплаты,
+	NULL,
+	NULL,
+	АЭС_ПлатежиТовары.Номенклатура,
+	NULL
+ИЗ
+	Документ.АЭС_Платежи.Товары КАК АЭС_ПлатежиТовары
+ГДЕ
+	АЭС_ПлатежиТовары.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И АЭС_ПлатежиТовары.Ссылка.КассаККМ = &amp;КассаККМ
+	И АЭС_ПлатежиТовары.СозданныйПКО.Проведен
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Сторонние услуги",
+	АЭС_ПлатежиСторонниеУслуги.Ссылка.Организация,
+	АЭС_ПлатежиСторонниеУслуги.Ссылка.КассаККМ,
+	АЭС_ПлатежиСторонниеУслуги.Ссылка.КассоваяСмена,
+	АЭС_ПлатежиСторонниеУслуги.Ссылка.Статус,
+	АЭС_ПлатежиСторонниеУслуги.Ссылка.Контрагент,
+	АЭС_ПлатежиСторонниеУслуги.ДокументПродажи,
+	АЭС_ПлатежиСторонниеУслуги.Сумма,
+	АЭС_ПлатежиСторонниеУслуги.СтавкаНДС,
+	ВЫБОР
+		КОГДА АЭС_ПлатежиСторонниеУслуги.СозданныйПКО = ЗНАЧЕНИЕ(Документ.ПриходныйКассовыйОрдер.ПустаяСсылка)
+			ТОГДА "Нет ПКО"
+		ИНАЧЕ АЭС_ПлатежиСторонниеУслуги.СозданныйПКО
+	КОНЕЦ,
+	АЭС_ПлатежиСторонниеУслуги.ВидОплаты,
+	АЭС_ПлатежиСторонниеУслуги.Ссылка.Контрагент.НомерЛС,
+	АЭС_ПлатежиСторонниеУслуги.Ссылка.Контрагент.АдресЛС,
+	АЭС_ПлатежиСторонниеУслуги.Номенклатура,
+	NULL
+ИЗ
+	Документ.АЭС_Платежи.СторонниеУслуги КАК АЭС_ПлатежиСторонниеУслуги
+ГДЕ
+	АЭС_ПлатежиСторонниеУслуги.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И АЭС_ПлатежиСторонниеУслуги.Ссылка.КассаККМ = &amp;КассаККМ
+	И АЭС_ПлатежиСторонниеУслуги.СозданныйПКО.Проведен</query>
+	</dataSet>
+	<totalField>
+		<dataPath>Сумма</dataPath>
+		<expression>Сумма(Сумма)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>КонецПериода(&amp;КонецПериода, "ДЕНЬ")</expression>
+	</parameter>
+	<parameter>
+		<name>КассаККМ</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Касса ККМ</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.КассыККМ</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Вид</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВидОплаты</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоставщикУслуг</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерЛС</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>АдресЛС</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Статус</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сумма</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">НомерЛС</dcsset:left>
+					<dcsset:comparisonType>BeginsWith</dcsset:comparisonType>
+					<dcsset:userSettingID>fab7fe8d-e244-4ec5-8085-2a3c364a4d66</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>853fd5f3-cccd-47dc-9f9c-179eeee3ebbb</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>05ba8999-1eb4-41a5-9a1b-6b015ea04d34</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>КассаККМ</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>6c19a608-22fc-49b9-b2db-91f1932c2083</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Вид</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ВидОплаты</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ПКО</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:row>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

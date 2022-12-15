@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53bb62ff-864f-46b1-9ec0-66ad3d653c19">
+  <producedTypes>
+    <selectionType typeId="ea71d193-0d34-4b89-862d-864a517351dd" valueTypeId="a1432d34-d4c0-4abb-8764-76ff1ae7798b"/>
+    <listType typeId="51a7c0c8-fc60-4d35-b485-98096f35151b" valueTypeId="1a78c0fd-5ea3-4a3e-bbbe-29a35bf1c5c3"/>
+    <managerType typeId="0bdd3933-594c-47b6-8b51-4892bfdafeb1" valueTypeId="a4f6b7f5-1871-4fcd-a5c9-fa23e527d9ea"/>
+    <recordSetType typeId="73e20fc8-8a57-4249-bcf5-3227b469466b" valueTypeId="c5d84544-de89-4f92-8803-6c4944ad764a"/>
+    <recordKeyType typeId="ad0a2e51-2e28-4fd1-bad8-ab762d628442" valueTypeId="f8f7d67c-e025-4496-924a-b22356750caf"/>
+    <recordType typeId="4db0dd73-31ce-4153-af34-46f0fc7558b2" valueTypeId="a9770ce8-7e2f-4baa-bbd2-e32ee334f1f6"/>
+    <recordManagerType typeId="cd189bb2-a161-481b-bf91-8c33c4ef077b" valueTypeId="be33b840-f3cc-479f-b6bd-5c7f275fa632"/>
+  </producedTypes>
+  <name>АЭС_ОчередьОтправкиПлатежейВСТЕК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь отправки чеков ККМв СТЕК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.АЭС_ОчередьОтправкиПлатежейВСТЕК.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="11f205b5-6bfb-4858-adcd-f26e651e0346">
+    <name>Выгружать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="d7391a81-6a21-4bd3-b8fa-9ec3ad9e193c">
+    <name>ПрефиксЛС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Префикс ЛС</value>
+    </synonym>
+    <comment>Нужен для группировки при выгрузке в СТЕК</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="74c7b9ea-4726-4c93-9f78-778e571b1f69">
+    <name>ИдентификаторПлатежаСТЕК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор платежа СТЕК</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b80aba4f-e05d-4b2f-871f-adb56a5f273d">
+    <name>ТекстСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст сообщения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="5df16900-06cc-4706-be11-a9f79c78eecc">
+    <name>СчетчикПопыток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счетчик попыток</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="99f3e94e-6688-46b9-97de-ff615ea43a46">
+    <name>Платеж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платеж</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.АЭС_Платежи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="41af00c4-af85-4676-a912-b415ea1ebb55">
+    <name>НомерСтрокиТЧ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер строки ТЧ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b5b5c4b4-30e3-40b2-a0ee-a151b323c5a6">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

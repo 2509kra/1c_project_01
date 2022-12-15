@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ade5198-48fc-4da0-9316-27d5b3851f52">
+  <producedTypes>
+    <selectionType typeId="1c202c67-88a2-4f00-be3d-ab1c6e5b75ad" valueTypeId="0b6a36d6-f9e7-4032-945b-8fb954aa7b38"/>
+    <listType typeId="c0d79c44-13b3-46b5-a3fc-ed4ab64275ea" valueTypeId="180a5ed4-bf2f-4b79-9134-106977dd9ae0"/>
+    <managerType typeId="b0332f39-0303-4ef0-b24e-25fcbac54584" valueTypeId="723cef87-aa3b-4394-8ecb-a909bdae92ac"/>
+    <recordSetType typeId="25041070-64c2-417c-995c-3b0f4aff1d5f" valueTypeId="f770ee81-6784-4c39-9c78-9e2c241b7eed"/>
+    <recordKeyType typeId="0c623d21-4cc2-4d7a-9a25-a8fadb2f6a16" valueTypeId="dc8c6ac1-5b2e-4283-a41e-9abf5c966a8f"/>
+    <recordType typeId="a34f560f-bfa3-49f8-816f-b9c1dfa2b20d" valueTypeId="893a4bbc-e287-48d8-bd46-01f781609929"/>
+    <recordManagerType typeId="a3820be0-42ae-44b6-b1d6-4577ddbe7595" valueTypeId="ca7c8b72-33b3-484e-a545-e48ca5d82eb4"/>
+  </producedTypes>
+  <name>АЭС_НоменклатураПоВидамОплат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура по видам оплат (АЭС)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f65ac25a-c7de-4e9e-b300-fcb8be0a8aab">
+    <name>Наличная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наличная</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a7aafaa9-1df7-424b-9c70-f3d073efb8c4">
+    <name>ПлатежнаяКарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежная карта</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="16b107ca-86d5-4d13-9a79-59a67a9abb01">
+    <name>КонсигнантПринципал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Консигнант/принципал</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="349dad89-4a46-4d8d-b33c-d66e989866e8">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="052ce432-5555-4b1b-9a16-ee46b5ee6b35">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7e5c1467-1d1e-4a3f-875e-20fa26d8e975">
+    <name>ВидОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оплаты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.АЭС_ВидОплаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

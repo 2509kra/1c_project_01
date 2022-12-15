@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0e0bbe2-72e0-45c9-9186-09e46254cd73">
+  <producedTypes>
+    <objectType typeId="e600e1f9-8dc4-4aec-b016-6e185aa95cbf" valueTypeId="5fb48539-8e8b-47f6-a504-6ba2eaf34b9c"/>
+    <managerType typeId="db2b2b87-21cd-4c35-a20b-f552b03aba71" valueTypeId="69d60d14-b083-4419-8803-db4a8bfd7f37"/>
+  </producedTypes>
+  <name>АЭС_ЗагрузкаОбновлениеНомеровУслугИзСТЕК</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС загрузка обновление номеров услуг из СТЕК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.АЭС_ЗагрузкаОбновлениеНомеровУслугИзСТЕК.Form.Форма</defaultForm>
+  <attributes uuid="e6a6e212-c9eb-48b5-b06e-ecaa84951d22">
+    <name>ПрефиксНомераЛС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Префикс номера ЛС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7cce39cc-6ec3-4efe-b2cb-cd42c7876b11">
+    <name>НачальныйНомерЛС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальный номер ЛС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9e865465-aa52-4655-94e0-aca48ba1d043">
+    <name>КонечныйНомерЛС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конечный номер ЛС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f7525c80-4c01-4a6d-ac86-ebc8443ddf81">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ=MM.yyyy</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=MM.yyyy</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="130c7c72-40e8-4d87-aaf2-f3e05ad2f725">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="313f0623-71aa-413a-8ae2-fc3bc9b264a6">
+    <producedTypes>
+      <objectType typeId="6f30b5ba-7a5c-466b-bbd1-93b928bd5cf5" valueTypeId="fe85ac9f-9cc9-4992-ae5e-2e2769e08a12"/>
+      <rowType typeId="cae6b950-db61-4b89-a938-05bc142c057c" valueTypeId="98d61c31-03e1-40cf-aac6-5730cee992d8"/>
+    </producedTypes>
+    <name>ТабличнаяЧасть</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табличная часть</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="01816699-ad09-4cd3-992d-6d41dfce7aeb">
+      <name>УслугаСТЕК</name>
+      <synonym>
+        <key>ru</key>
+        <value>Услуга СТЕК</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.АЭС_УслугиСТЕК</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7025a573-7965-4e33-b7d5-ca1ce5e9abd9">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="09ccabb4-d206-49ce-9464-cbd28c7f2bc9">
+      <name>НомерУслуги</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер услуги</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e9950b47-842e-4d01-ae26-3f39b19d3228">
+      <name>НаименованиеУслугиКраткое</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование услуги краткое</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="1d1fc3c0-8977-4caf-a1d8-e2041d9f27ef">
+      <name>НаименованиеУслугиПолное</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование услуги полное</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="0d69ee10-2e53-4e32-8726-3815b2fce40b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0588e08-fcd6-4d5b-8a95-36bdfcd57f51">
+  <producedTypes>
+    <objectType typeId="1afd64d3-bbca-4175-b309-709736f30968" valueTypeId="fbd211c9-2167-4d87-bbb1-8797a3b61fa3"/>
+    <refType typeId="e31f2508-56b8-4126-acc6-3912fa5f94a5" valueTypeId="fa4cb697-f0d2-4315-9a76-7bc96d78a3c8"/>
+    <selectionType typeId="fa2b96d7-4e7f-4b58-9c4f-42faa6b1c3cb" valueTypeId="cf66bc36-68aa-47e0-a0a6-21bd05c6f3a1"/>
+    <listType typeId="af9947d5-3459-4293-892d-5337cd3558e2" valueTypeId="963d881e-1dda-4fa5-85c7-82d109db780a"/>
+    <managerType typeId="767346ab-a233-463b-a77f-b33228776cc2" valueTypeId="bbdba4c3-b334-44cf-9ad6-0d47a7a602db"/>
+  </producedTypes>
+  <name>АЭС_ВидОплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>АЭС вид оплаты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.АЭС_ВидОплаты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.АЭС_ВидОплаты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="e619f91a-6334-455c-b131-f1967d769c5c">
+      <name>ВозмещениеРасходовПоРешениюСудаИлиДобровольно</name>
+      <description>Возмещение расходов по решению суда / добровольно</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="32964bea-3841-4b6f-a2e1-c7b98d77d1b5">
+        <name>КомпенсацияСудебныхРасходов</name>
+        <description>Компенсация судебных расходов</description>
+        <code xsi:type="core:StringValue">
+          <value>000000014</value>
+        </code>
+      </content>
+    </items>
+    <items id="5c9499ad-5144-4cd3-b4a6-2bac76354802">
+      <name>ИныеОперации</name>
+      <description>Иные операции</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="5757e721-8a19-4c48-bb34-b42a3d10778c">
+        <name>КомиссионноеВознаграждение</name>
+        <description>Комиссионное вознаграждение</description>
+        <code xsi:type="core:StringValue">
+          <value>000000033</value>
+        </code>
+      </content>
+      <content id="0907b1b7-7277-4ce8-a381-51ab34b7858e">
+        <name>ПрочиеОперации</name>
+        <description>Прочие операции</description>
+        <code xsi:type="core:StringValue">
+          <value>000000007</value>
+        </code>
+      </content>
+      <content id="17a4980b-f8e5-451d-b8f9-28f7c156a2cc">
+        <name>Субаренда</name>
+        <description>Субаренда</description>
+        <code xsi:type="core:StringValue">
+          <value>000000004</value>
+        </code>
+      </content>
+      <content id="0377aeec-44da-4cb1-b489-96dddac00fa5">
+        <name>УслугиАвтотранспорта</name>
+        <description>Услуги автотранспорта</description>
+        <code xsi:type="core:StringValue">
+          <value>000000006</value>
+        </code>
+      </content>
+      <content id="f9b0ef88-831a-44fe-baf9-456259a9597e">
+        <name>УстановкаСнятиеПУ</name>
+        <description>Установка/снятие ПУ</description>
+        <code xsi:type="core:StringValue">
+          <value>000000005</value>
+        </code>
+      </content>
+    </items>
+    <items id="12b412d6-545e-4a18-9424-4fb48759bb4b">
+      <name>ОсновнаяДеятельность</name>
+      <description>Основная деятельность</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="5cd4609f-cb38-4b9c-9b46-604ec8505a53">
+        <name>ПроцентПоРеструктуризированнойЗадолженности</name>
+        <description>% по реструктуризированной задолженности</description>
+        <code xsi:type="core:StringValue">
+          <value>000000035</value>
+        </code>
+      </content>
+      <content id="63969ea8-5186-470b-abb8-e8035b36bdd9">
+        <name>БезучетноеПотребление</name>
+        <description>Безучетное потребление</description>
+        <code xsi:type="core:StringValue">
+          <value>000000027</value>
+        </code>
+      </content>
+      <content id="ea2bc6d5-4cc0-4c46-af44-59afd4e4694d">
+        <name>Госпошлина</name>
+        <description>Госпошлина</description>
+        <code xsi:type="core:StringValue">
+          <value>000000013</value>
+        </code>
+      </content>
+      <content id="13cb2f23-d428-4c35-94a3-17f7c73d41cd">
+        <name>Пени</name>
+        <description>Пени</description>
+        <code xsi:type="core:StringValue">
+          <value>000000012</value>
+        </code>
+      </content>
+      <content id="af81424a-e773-48be-b41b-858f7d863ca5">
+        <name>ПениПоСудебномуАкту</name>
+        <description>Пени по судебному акту</description>
+        <code xsi:type="core:StringValue">
+          <value>000000036</value>
+        </code>
+      </content>
+      <content id="08945536-085d-42d9-9729-a353baead7ed">
+        <name>ПлатаЗаЭЭНаСодержаниеОИ</name>
+        <description>Плата за э/э на содерж. ОИ</description>
+        <code xsi:type="core:StringValue">
+          <value>000000034</value>
+        </code>
+      </content>
+      <content id="9c05768d-2f7b-4859-b50a-c1e0e398f082">
+        <name>Электроэнергия</name>
+        <description>Электроэнергия</description>
+        <code xsi:type="core:StringValue">
+          <value>000000001</value>
+        </code>
+      </content>
+      <content id="7b1c2914-496c-4c44-a99d-5fe5b1d1e8ca">
+        <name>Электроэнергия_Аванс</name>
+        <description>Электроэнергия (аванс)</description>
+        <code xsi:type="core:StringValue">
+          <value>000000030</value>
+        </code>
+      </content>
+    </items>
+    <items id="6e82b26d-4e2e-40f0-831f-a4f923858dc3">
+      <name>ОтключениеПодключение</name>
+      <description>Отключение подключение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000026</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="e66b8e2f-fd32-47b0-84e6-3a93824147c7">
+        <name>Отключение</name>
+        <description>Отключение</description>
+        <code xsi:type="core:StringValue">
+          <value>000000002</value>
+        </code>
+      </content>
+      <content id="1710bdb7-dc1e-4fad-9e01-ac5abcac894c">
+        <name>Подключение</name>
+        <description>Подключение</description>
+        <code xsi:type="core:StringValue">
+          <value>000000029</value>
+        </code>
+      </content>
+    </items>
+    <items id="5d97c575-f44b-404b-8de2-7f041831fc52">
+      <name>ПриемОплатыОтФизЛицВПользу3хЛиц_ПлатежныйАгент</name>
+      <description>Прием оплаты от физ.лиц в пользу 3-х лиц (платежный агент)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000020</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="7f859245-46e9-4878-834f-ccaa451fe7d8">
+        <name>ГоспошлинаВПользуЗхЛиц</name>
+        <description>Госпошлина в пользу 3-х лиц</description>
+        <code xsi:type="core:StringValue">
+          <value>000000028</value>
+        </code>
+      </content>
+      <content id="7b4d357c-5685-435b-9986-c31b415d8308">
+        <name>ПриемУслугОтФизЛицВПользуПринципалаПоАгентскомуДоговору</name>
+        <description>Прием услуг от физ.лиц в пользу принципала по агентскому договору</description>
+        <code xsi:type="core:StringValue">
+          <value>000000022</value>
+        </code>
+      </content>
+      <content id="2fb0fa1d-93d2-4674-abcf-080732f7750d">
+        <name>ПриемЭлектроэнергииВПользуПринципалаПоАгентскомуДоговору</name>
+        <description>Прием электроэнергии в пользу принципала по агентскому договору</description>
+        <code xsi:type="core:StringValue">
+          <value>000000021</value>
+        </code>
+      </content>
+    </items>
+    <items id="ec3f36d5-33a8-4744-b4c0-e49bac593c7c">
+      <name>ПродажаСобственныхТоваров</name>
+      <description>Продажа собственных товаров</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="94427348-f643-4f4a-bb40-1f3bbccdf081">
+        <name>ЭлектротехническиеТоварыСобственные</name>
+        <description>Электротехнические товары (собственные)</description>
+        <code xsi:type="core:StringValue">
+          <value>000000003</value>
+        </code>
+      </content>
+    </items>
+    <items id="6c819b0c-f7a0-44cb-ac8d-8e7b17cab96a">
+      <name>ПродажаТоваровПоДоговоруКомиссииГруппа</name>
+      <description>Продажа товаров по договору комиссии</description>
+      <code xsi:type="core:StringValue">
+        <value>000000023</value>
+      </code>
+      <isFolder>true</isFolder>
+      <content id="f87a9940-7307-4f28-aaae-fac0f66ed18d">
+        <name>ПродажаТовараПоДоговоруКомиссии</name>
+        <description>Продажа товара по договору комиссии</description>
+        <code xsi:type="core:StringValue">
+          <value>000000024</value>
+        </code>
+      </content>
+      <content id="6bdb6feb-ce06-4804-b18b-c000f465b670">
+        <name>ПродажаТовараПоДоговоруКонсигнации</name>
+        <description>Продажа товара по договору консигнации</description>
+        <code xsi:type="core:StringValue">
+          <value>000000025</value>
+        </code>
+      </content>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.АЭС_ВидОплаты.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.АЭС_ВидОплаты.Form.ФормаГруппы</defaultFolderForm>
+  <attributes uuid="03f12fab-a4e6-435f-99df-ad39f5c488a1">
+    <name>СтатьяДДСДляСводногоПКО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья ДДС для сводного ПКО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиДвиженияДенежныхСредств</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4ccb4690-fb8a-405d-810b-52d419913400">
+    <name>ОснованиеДляСводногоПКО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание для сводного ПКО</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f933fff4-054a-4fc4-b6c6-b24e36c974de">
+    <name>ТипАналитикиДляСводногоПКО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип аналитики для сводного ПКО</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>&quot;ЮЛ&quot; - ю/л раздельно, ф/л сводно
+&quot;ФЛ&quot; - ф/л раздельно, ю/л сводно
+&quot;ЮЛФЛ&quot; - все раздельно
+&lt;пустая строка>&quot; - все сводно
+
+</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3d0adf9a-7141-4bf2-841c-28324aeb23b6">
+    <name>КонтрагентЮЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент ЮЛ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="15201f5a-dad8-486a-acb8-c18b281eb96a">
+    <name>КонтрагентФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент ФЛ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e577e2d1-71c2-4b0d-ab2e-09ac56eea8c5">
+    <name>СтавкаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка НДС (для сводного ПКО)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтавкиНДС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="054fdd85-79de-4a33-bffa-c8bb04dc865b">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a4f9cf7d-9e23-45df-a02f-91af34b63952">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>
