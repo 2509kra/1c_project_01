@@ -39,4 +39,5 @@
   </languages>
   <constants>Constant.ОрганизацияПоУмолчанию</constants>
   <catalogs>Catalog.Организация</catalogs>
+  <dataProcessors>DataProcessor.ОбработкаPDF</dataProcessors>
 </mdclass:Configuration>

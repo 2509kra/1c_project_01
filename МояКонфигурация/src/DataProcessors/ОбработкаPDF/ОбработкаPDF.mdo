@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="832a3345-fbd9-45ca-a4bb-3cf1b3462600">
+  <producedTypes>
+    <objectType typeId="7f49b864-9559-41fc-860c-269119b6b42c" valueTypeId="90787771-7f08-488f-bae1-a246d34c4837"/>
+    <managerType typeId="456f9ad1-fd2e-495f-a102-b53fb32155c1" valueTypeId="a549f589-1149-4af2-8fbd-383403b80270"/>
+  </producedTypes>
+  <name>ОбработкаPDF</name>
+  <synonym>
+    <key>en</key>
+    <value>Обработка PDF</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОбработкаPDF.Form.Форма</defaultForm>
+  <forms uuid="02196d07-6e36-47f8-b2cb-7f8382d5eac5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>
